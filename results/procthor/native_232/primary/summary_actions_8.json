@@ -1,0 +1,64 @@
+{
+  "schema": "safevantage_selective_head_application_v0.4",
+  "model": "results/procthor/native_232/primary/head_f1_cap_actions_8.json",
+  "model_sha256": "02c21f21406fa2715043890927300558b160f68a5f019cfd0edfff4d9b76bc70",
+  "source_rows_sha256": "7623e4dd354187b7f1ce0e932ffce4b2eaca0c26491f2488b8d28c1970d4af68",
+  "methods": {
+    "coverage_gain": {
+      "episodes": 7424,
+      "mean_risk": 0.40845536725621284,
+      "macro_f1": 0.5232327211412117,
+      "false_positive_rate": 0.0,
+      "answer_rate": 0.5087553879310345,
+      "answered_accuracy": 0.8461742123378343,
+      "mean_geodesic_m": 6.313664670005955,
+      "predictions": {
+        "yes": 669,
+        "no": 3108,
+        "wait": 3647
+      }
+    },
+    "detector_confidence_gain": {
+      "episodes": 7424,
+      "mean_risk": 0.39962377512656105,
+      "macro_f1": 0.5458101596976558,
+      "false_positive_rate": 0.0,
+      "answer_rate": 0.5264008620689655,
+      "answered_accuracy": 0.8508188331627431,
+      "mean_geodesic_m": 5.766016505871385,
+      "predictions": {
+        "yes": 781,
+        "no": 3127,
+        "wait": 3516
+      }
+    },
+    "safevantage_active": {
+      "episodes": 7424,
+      "mean_risk": 0.39483640210777277,
+      "macro_f1": 0.5765244910705295,
+      "false_positive_rate": 0.0005387931034482759,
+      "answer_rate": 0.5544181034482759,
+      "answered_accuracy": 0.8491253644314869,
+      "mean_geodesic_m": 3.942005556048665,
+      "predictions": {
+        "yes": 987,
+        "no": 3129,
+        "wait": 3308
+      }
+    },
+    "safevantage_dc_full": {
+      "episodes": 7424,
+      "mean_risk": 0.38418127069894054,
+      "macro_f1": 0.6044030377700178,
+      "false_positive_rate": 0.0008081896551724138,
+      "answer_rate": 0.5806842672413793,
+      "answered_accuracy": 0.8550220366504291,
+      "mean_geodesic_m": 4.938275009285305,
+      "predictions": {
+        "yes": 1136,
+        "no": 3175,
+        "wait": 3113
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "bootstrap": {
+    "unit": "scene_group_id",
+    "resamples": 5000,
+    "seed": 0,
+    "interval": "percentile 95% (2.5th, 97.5th)",
+    "delta_direction": "safevantage_dc_full minus comparison method"
+  },
+  "budgets": {
+    "8": {
+      "scenes": 232,
+      "point_metrics": {
+        "coverage_gain": {
+          "episodes": 7424,
+          "mean_risk": 0.40845536725621284,
+          "macro_f1": 0.5232327211412117,
+          "false_positive_rate": 0.0,
+          "answer_rate": 0.5087553879310345,
+          "answered_accuracy": 0.8461742123378343,
+          "mean_geodesic_m": 6.313664670005955,
+          "mean_actions": 8.0
+        },
+        "detector_confidence_gain": {
+          "episodes": 7424,
+          "mean_risk": 0.39962377512656105,
+          "macro_f1": 0.5458101596976558,
+          "false_positive_rate": 0.0,
+          "answer_rate": 0.5264008620689655,
+          "answered_accuracy": 0.8508188331627431,
+          "mean_geodesic_m": 5.766016505871385,
+          "mean_actions": 8.0
+        },
+        "safevantage_active": {
+          "episodes": 7424,
+          "mean_risk": 0.39483640210777277,
+          "macro_f1": 0.5765244910705295,
+          "false_positive_rate": 0.0005387931034482759,
+          "answer_rate": 0.5544181034482759,
+          "answered_accuracy": 0.8491253644314869,
+          "mean_geodesic_m": 3.942005556048665,
+          "mean_actions": 8.0
+        },
+        "safevantage_dc_full": {
+          "episodes": 7424,
+          "mean_risk": 0.3841812706989405,
+          "macro_f1": 0.6044030377700178,
+          "false_positive_rate": 0.0008081896551724138,
+          "answer_rate": 0.5806842672413793,
+          "answered_accuracy": 0.8550220366504291,
+          "mean_geodesic_m": 4.938275009285305,
+          "mean_actions": 7.998518318965517
+        }
+      },
+      "paired_deltas": {
+        "comparison": "safevantage_active",
+        "risk": {
+          "mean": -0.010610805690022826,
+          "ci95": [
+            -0.016512910106633413,
+            -0.004762970267505462
+          ]
+        },
+        "macro_f1": {
+          "mean": 0.02786576696937106,
+          "ci95": [
+            0.021528070899718085,
+            0.03418110909988035
+          ]
+        }
+      }
+    },
+    "12": {
+      "scenes": 232,
+      "point_metrics": {
+        "coverage_gain": {
+          "episodes": 7424,
+          "mean_risk": 0.37797542574120974,
+          "macro_f1": 0.6052743100010166,
+          "false_positive_rate": 0.0005387931034482759,
+          "answer_rate": 0.58203125,
+          "answered_accuracy": 0.8632261050682712,
+          "mean_geodesic_m": 8.969499017071813,
+          "mean_actions": 12.0
+        },
+        "detector_confidence_gain": {
+          "episodes": 7424,
+          "mean_risk": 0.3630904989820215,
+          "macro_f1": 0.6361913808935753,
+          "false_positive_rate": 0.00026939655172413793,
+          "answer_rate": 0.6120689655172413,
+          "answered_accuracy": 0.8688380281690141,
+          "mean_geodesic_m": 8.160542085469732,
+          "mean_actions": 12.0
+        },
+        "safevantage_active": {
+          "episodes": 7424,
+          "mean_risk": 0.37446288543713985,
+          "macro_f1": 0.6385733470045722,
+          "false_positive_rate": 0.0008081896551724138,
+          "answer_rate": 0.6225754310344828,
+          "answered_accuracy": 0.8565556036347901,
+          "mean_geodesic_m": 5.928402678519166,
+          "mean_actions": 11.99609375
+        },
+        "safevantage_dc_full": {
+          "episodes": 7424,
+          "mean_risk": 0.3648643931130686,
+          "macro_f1": 0.65588916014516,
+          "false_positive_rate": 0.00026939655172413793,
+          "answer_rate": 0.6388739224137931,
+          "answered_accuracy": 0.8619017499472907,
+          "mean_geodesic_m": 7.442518113068594,
+          "mean_actions": 11.926185344827585
+        }
+      },
+      "paired_deltas": {
+        "comparison": "safevantage_active",
+        "risk": {
+          "mean": -0.009641958774305213,
+          "ci95": [
+            -0.01668882251969145,
+            -0.0024214827190859782
+          ]
+        },
+        "macro_f1": {
+          "mean": 0.017341893839642422,
+          "ci95": [
+            0.010439110492667877,
+            0.02422861829454312
+          ]
+        }
+      }
+    }
+  }
+}

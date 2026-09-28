@@ -1,0 +1,37 @@
+{
+  "version": "counterevidence-outcome-model-v0.1",
+  "training_split": "train",
+  "training_scenes": 134,
+  "visibility_examples": 230560,
+  "visibility_positive_rate": 0.11623438584316446,
+  "feature_names": [
+    "distance_to_target_m",
+    "heading_cosine",
+    "baseline_from_first_position_m",
+    "independent_position"
+  ],
+  "feature_mean": [
+    5.326920656263305,
+    -1.713295247057732e-18,
+    5.841915310477731,
+    1.0
+  ],
+  "feature_std": [
+    3.2806224338180656,
+    0.7071006473398427,
+    3.6788221584215557,
+    1.0
+  ],
+  "bias": -2.3180350669068006,
+  "weights": [
+    -0.7714285322329696,
+    0.9973579237013752,
+    -0.023612675742403277,
+    0.0
+  ],
+  "false_positive_rate": 0.014991854265402844,
+  "belief_calibration": {
+    "bias": -4.940786080980482,
+    "slope": 6.0704251831099825
+  }
+}

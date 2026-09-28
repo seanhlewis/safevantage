@@ -1,0 +1,93 @@
+{
+  "split": "test",
+  "sensor": "yoloworld",
+  "actions": 12,
+  "force_fixed_horizon": true,
+  "decision": {
+    "yes_threshold": 0.55,
+    "yes_maximum": 0.65,
+    "no_coverage": 0.25,
+    "safe_yes_threshold": 0.55,
+    "safe_yes_maximum": 0.65,
+    "safe_no_coverage": 0.25,
+    "safe_target_consistency_m": 0.75,
+    "safe_no_score_ceiling": 0.0,
+    "safe_no_min_views": 99
+  },
+  "policy": {
+    "safe_ray_weight": 2.0,
+    "safe_target_depth_m": 2.0,
+    "safe_coverage_weight": 0.0,
+    "safe_prior_nearest_weight": 0.1,
+    "safe_prior_semantic_weight": 0.5,
+    "safe_prior_new_room_weight": 0.75,
+    "safe_prior_coverage_weight": 0.0,
+    "safe_exploration_mode": "coverage",
+    "safe_detection_trigger": 0.1,
+    "safe_travel_power": 3.0,
+    "safe_max_edge_m": 0.75,
+    "room_prior_model": "Externally supplied room-prior model."
+  },
+  "methods": {
+    "category_room_prior": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.4389227818950151,
+      "answer_rate": 0.14251077586206898,
+      "answered_accuracy": 0.997164461247637,
+      "false_positive_rate": 0.0008081896551724138,
+      "macro_f1": 0.22138581839800792,
+      "mean_geodesic_m": 8.157695688118611
+    },
+    "coverage_gain": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.4512512878101753,
+      "answer_rate": 0.11543642241379311,
+      "answered_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "macro_f1": 0.18756839571022105,
+      "mean_geodesic_m": 8.969499017071813
+    },
+    "detector_confidence_gain": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.44228325045085914,
+      "answer_rate": 0.13631465517241378,
+      "answered_accuracy": 0.9970355731225297,
+      "false_positive_rate": 0.0008081896551724138,
+      "macro_f1": 0.21359017781541068,
+      "mean_geodesic_m": 8.420103899134997
+    },
+    "nearest_frontier": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.44284364075404753,
+      "answer_rate": 0.12890625,
+      "answered_accuracy": 0.9968652037617555,
+      "false_positive_rate": 0.0008081896551724138,
+      "macro_f1": 0.2043264082244592,
+      "mean_geodesic_m": 5.27629161611649
+    },
+    "random": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.4782991362973357,
+      "answer_rate": 0.09428879310344827,
+      "answered_accuracy": 0.9671428571428572,
+      "false_positive_rate": 0.0,
+      "macro_f1": 0.16111617780730342,
+      "mean_geodesic_m": 19.247412159404686
+    },
+    "safevantage_fixed_horizon": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.43543495077041283,
+      "answer_rate": 0.1462823275862069,
+      "answered_accuracy": 0.9990791896869244,
+      "false_positive_rate": 0.00026939655172413793,
+      "macro_f1": 0.22613588995414757,
+      "mean_geodesic_m": 7.9026231842059325
+    }
+  }
+}

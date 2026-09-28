@@ -1,0 +1,17 @@
+# Direct dependencies for the copied analysis scripts.
+# Core evaluation and analysis:
+numpy>=1.24,<3
+scipy>=1.10,<2
+
+# Optional, for running the copied tests:
+pytest>=7,<9
+
+# Optional ProcTHOR preparation and RGB-D rendering:
+Pillow>=10,<13
+scikit-image>=0.22,<1
+mujoco>=3.2,<4
+molmospaces-resources==0.0.2
+compress-json>=1.0
+packaging>=24
+tqdm>=4.66
+pydantic>=2,<3

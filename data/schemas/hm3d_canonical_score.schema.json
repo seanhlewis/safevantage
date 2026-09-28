@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One frozen canonical-method HM3D case score",
+  "description": "One JSONL record. Repeat each case_id for each of the three listed methods. The method determines the required score field.",
+  "type": "object",
+  "required": ["case_id", "scene_id", "gt_present", "method"],
+  "properties": {
+    "case_id": {"type": ["string", "integer"], "description": "Stable case key shared by all methods."},
+    "scene_id": {"type": ["string", "integer"], "description": "Stable HM3D scene key used for grouped folds and resampling."},
+    "gt_present": {"type": ["boolean", "integer"], "enum": [true, false, 0, 1], "description": "Binary ground truth for the case."},
+    "method": {"enum": ["safevantage_full", "conceptgraphs_tau1", "vlmaps_tau1"]},
+    "support_count": {"type": "number", "description": "Required for safevantage_full."},
+    "confidence": {"type": "number", "description": "Required for conceptgraphs_tau1 and vlmaps_tau1."}
+  },
+  "allOf": [
+    {"if": {"properties": {"method": {"const": "safevantage_full"}}, "required": ["method"]}, "then": {"required": ["support_count"]}},
+    {"if": {"properties": {"method": {"enum": ["conceptgraphs_tau1", "vlmaps_tau1"]}}, "required": ["method"]}, "then": {"required": ["confidence"]}}
+  ],
+  "additionalProperties": true
+}

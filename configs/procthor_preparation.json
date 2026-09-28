@@ -1,0 +1,17 @@
+{
+  "molmospaces_commit": "1320b266d2b47aaa81c5f7a419cb9d3474e6994d",
+  "scene_counts": {
+    "train": 256,
+    "validation": 128,
+    "test": 256
+  },
+  "vocabulary_size": 24,
+  "image_width": 320,
+  "image_height": 240,
+  "resource_versions": {
+    "train": "20251122_with_occupancy",
+    "validation": "20251217_with_occupancy",
+    "test": "20251121_with_occupancy",
+    "objects": "20251117"
+  }
+}

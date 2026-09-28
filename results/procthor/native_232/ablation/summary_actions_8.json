@@ -1,0 +1,120 @@
+{
+  "split": "test",
+  "sensor": "controlled",
+  "actions": 8,
+  "force_fixed_horizon": true,
+  "common_decoder": true,
+  "value_stop": false,
+  "decision": {
+    "yes_threshold": 0.55,
+    "yes_maximum": 0.65,
+    "no_coverage": 0.25,
+    "safe_yes_threshold": 0.55,
+    "safe_yes_maximum": 0.65,
+    "safe_no_coverage": 0.25,
+    "safe_target_consistency_m": 0.75,
+    "safe_no_score_ceiling": 0.55,
+    "safe_no_min_views": 0
+  },
+  "policy": {
+    "safe_ray_weight": 0.75,
+    "safe_target_depth_m": 2.0,
+    "safe_coverage_weight": 0.1,
+    "safe_confidence_backbone_weight": 1.0,
+    "safe_provenance_weight": 1.0,
+    "safe_yaw_diversity_weight": 0.2,
+    "safe_ray_alignment_weight": 1.4,
+    "safe_baseline_geometry_weight": 0.35,
+    "safe_prior_nearest_weight": 0.35,
+    "safe_prior_semantic_weight": 0.5,
+    "safe_prior_new_room_weight": 0.25,
+    "safe_prior_coverage_weight": 0.2,
+    "safe_exploration_mode": "coverage",
+    "safe_detection_trigger": 0.55,
+    "safe_travel_power": 1.0,
+    "safe_max_edge_m": 1000000000.0,
+    "room_prior_model": null
+  },
+  "methods": {
+    "counterevidence_active": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.44802825345756114,
+      "answer_rate": 0.13402478448275862,
+      "answered_accuracy": 0.9849246231155779,
+      "false_positive_rate": 0.004040948275862069,
+      "macro_f1": 0.2082005523688124,
+      "mean_geodesic_m": 4.938275009285305
+    },
+    "coverage_gain": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.4774208844975922,
+      "answer_rate": 0.07260237068965517,
+      "answered_accuracy": 0.9795918367346939,
+      "false_positive_rate": 0.002963362068965517,
+      "macro_f1": 0.12420606916019761,
+      "mean_geodesic_m": 6.313664670005955
+    },
+    "detector_confidence_gain": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.47263024064380244,
+      "answer_rate": 0.08378232758620689,
+      "answered_accuracy": 0.9790996784565916,
+      "false_positive_rate": 0.003502155172413793,
+      "macro_f1": 0.14051684356252883,
+      "mean_geodesic_m": 5.766016505871385
+    },
+    "safevantage_active": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.4627916822801866,
+      "answer_rate": 0.10250538793103449,
+      "answered_accuracy": 0.9802890932982917,
+      "false_positive_rate": 0.004040948275862069,
+      "macro_f1": 0.1667784484685893,
+      "mean_geodesic_m": 3.942005556048665
+    },
+    "safevantage_dc_no_belief": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.4451236985859558,
+      "answer_rate": 0.1375269396551724,
+      "answered_accuracy": 0.9862879529872673,
+      "false_positive_rate": 0.003771551724137931,
+      "macro_f1": 0.212761462074794,
+      "mean_geodesic_m": 4.458289103197126
+    },
+    "safevantage_dc_no_independence": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.4488984737301783,
+      "answer_rate": 0.1336206896551724,
+      "answered_accuracy": 0.9838709677419355,
+      "false_positive_rate": 0.004310344827586207,
+      "macro_f1": 0.20748299319727892,
+      "mean_geodesic_m": 4.9329564887990145
+    },
+    "safevantage_dc_no_observability": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.4774747460451066,
+      "answer_rate": 0.07920258620689655,
+      "answered_accuracy": 0.9727891156462585,
+      "false_positive_rate": 0.004310344827586207,
+      "macro_f1": 0.1330232558139535,
+      "mean_geodesic_m": 6.300177079589298
+    },
+    "safevantage_dc_no_value": {
+      "episodes": 7424,
+      "scenes": 232,
+      "mean_risk": 0.44963334044197506,
+      "answer_rate": 0.12513469827586207,
+      "answered_accuracy": 0.9870828848223897,
+      "false_positive_rate": 0.003232758620689655,
+      "macro_f1": 0.1975867269984917,
+      "mean_geodesic_m": 4.118793028181996
+    }
+  }
+}

@@ -1,0 +1,2640 @@
+{
+  "all_method_source_sha256": "c07f81aeb3a377ac7b95ce0870b90a31d16ce19aecbee501ceb415847dbbdd5e",
+  "deltas_safe_minus_strongest": {
+    "false_positive_rate": 0.0021551724137931034,
+    "macro_f1": 0.030360897075057736,
+    "mean_geodesic_m": -0.30881803657795315,
+    "mean_risk": -0.009333602519336515
+  },
+  "frozen_v12_source_sha256": "a913980597c7b9e6e533b0db831402efb0db68faaf5780ee9e9b258219d75820",
+  "locked_test_accessed_for_model_selection": false,
+  "models": {
+    "category_room_prior": {
+      "categories": [
+        "alarmclock",
+        "basketball",
+        "book",
+        "bottle",
+        "cellulartelephone",
+        "chair",
+        "countertop",
+        "creditcard",
+        "ladle",
+        "laptop",
+        "lettuce",
+        "papertowel",
+        "pillow",
+        "plate",
+        "refrigerator",
+        "saltshaker",
+        "shelf",
+        "sofa",
+        "spatula",
+        "tablelamp",
+        "television",
+        "tennisracket",
+        "toilettissue",
+        "tomato"
+      ],
+      "coefficients": [
+        0.2589538006977279,
+        0.07823670092443202,
+        -0.010733547635081392,
+        0.1796633301460992,
+        0.1998361250826964,
+        0.18942988621699536,
+        0.18965444828326264,
+        0.1714899513348619,
+        0.14989795259287259,
+        3.643430891798922e-18,
+        0.050428308676824414,
+        0.0,
+        0.15169865048841946,
+        -0.0793394739979036,
+        -0.06758373235945778,
+        -0.0033568099784274156,
+        0.005092847200172925,
+        0.06783074743724962,
+        -0.19618905565303424,
+        0.11894543555918678,
+        -0.03628867452162076,
+        0.08805953700306714,
+        0.09982004296938861,
+        -0.14279857360332493,
+        0.06267078642948781,
+        -0.014459251519107815,
+        -0.09922349470991788,
+        0.15906707398941147,
+        0.07910906488937902,
+        0.0946230072034443,
+        -0.04297024276420542,
+        -0.13368444045200706,
+        0.06227846642888413,
+        -0.05324390119054639,
+        -0.05568325013689995,
+        0.1599281118007525,
+        -0.22846856629972115,
+        0.08684731735570728,
+        -0.021971816905564413
+      ],
+      "decision": {
+        "no_probability": 0.3,
+        "pair_radius_m": 1.0,
+        "pair_support_threshold": 0.1,
+        "yes_probability": 0.8
+      },
+      "feature_names": [
+        "position_score_1",
+        "position_score_2",
+        "position_score_3",
+        "position_score_top3_mean",
+        "support_positions_ge_0.05",
+        "support_positions_ge_0.10",
+        "support_positions_ge_0.30",
+        "support_positions_ge_0.50",
+        "support_positions_ge_0.70",
+        "position_coverage",
+        "distinct_rooms",
+        "observations",
+        "grounded_fraction",
+        "minimum_grounded_pair_distance_clipped_5m",
+        "maximum_context_score",
+        "category=alarmclock",
+        "category=basketball",
+        "category=book",
+        "category=bottle",
+        "category=cellulartelephone",
+        "category=chair",
+        "category=countertop",
+        "category=creditcard",
+        "category=ladle",
+        "category=laptop",
+        "category=lettuce",
+        "category=papertowel",
+        "category=pillow",
+        "category=plate",
+        "category=refrigerator",
+        "category=saltshaker",
+        "category=shelf",
+        "category=sofa",
+        "category=spatula",
+        "category=tablelamp",
+        "category=television",
+        "category=tennisracket",
+        "category=toilettissue",
+        "category=tomato"
+      ],
+      "folds": 5,
+      "intercept": 0.28284413942763725,
+      "l2": 0.1,
+      "mean": [
+        0.21681567130495938,
+        0.12748769926336787,
+        0.007483980117630663,
+        0.11726245022865275,
+        0.5600754310344828,
+        0.5008081896551724,
+        0.4202586206896552,
+        0.3739224137931034,
+        0.30711206896551724,
+        0.07499999999999479,
+        1.4700969827586208,
+        9.0,
+        0.10105363984674269,
+        3.9333166626777554,
+        0.9129905663430691,
+        0.03879310344827586,
+        0.04310344827586207,
+        0.04741379310344827,
+        0.05172413793103448,
+        0.03771551724137931,
+        0.04741379310344827,
+        0.03556034482758621,
+        0.03987068965517242,
+        0.04418103448275862,
+        0.040948275862068964,
+        0.03879310344827586,
+        0.04956896551724138,
+        0.04418103448275862,
+        0.03017241379310345,
+        0.040948275862068964,
+        0.036637931034482756,
+        0.04418103448275862,
+        0.04418103448275862,
+        0.03556034482758621,
+        0.04525862068965517,
+        0.04310344827586207,
+        0.04310344827586207,
+        0.03771551724137931,
+        0.03987068965517242
+      ],
+      "oof_metrics": {
+        "answer_rate": 0.44450431034482757,
+        "answered_accuracy": 0.8872727272727273,
+        "episodes": 3712,
+        "false_positive_rate": 0.005387931034482759,
+        "macro_f1": 0.5408467661925789,
+        "mean_geodesic_m": 3.2034039206256897,
+        "mean_risk": 0.3892486625413153,
+        "predictions": {
+          "no": 1052,
+          "wait": 2062,
+          "yes": 598
+        }
+      },
+      "std": [
+        0.3513199735776753,
+        0.28713594130100734,
+        0.06906526335786219,
+        0.20909274362843067,
+        0.8437465164167026,
+        0.8160561394239942,
+        0.7671172652421411,
+        0.7305295392887723,
+        0.6719223101585536,
+        1.0,
+        0.6784634891514761,
+        1.0,
+        0.14193951223914822,
+        1.937233909332694,
+        0.129770730933123,
+        0.19310152400519145,
+        0.2030899825756871,
+        0.2125222937176141,
+        0.22146952721836202,
+        0.190507367313172,
+        0.21252229371761394,
+        0.18519127059159704,
+        0.19565535454363506,
+        0.20549713057556268,
+        0.19817041798915064,
+        0.19310152400519076,
+        0.21705271980510632,
+        0.20549713057556376,
+        0.17106150718089372,
+        0.1981704179891515,
+        0.1878712139844689,
+        0.20549713057556376,
+        0.2054971305755614,
+        0.18519127059159735,
+        0.20787082032580845,
+        0.20308998257568567,
+        0.20308998257568667,
+        0.19050736731317122,
+        0.19565535454363348
+      ],
+      "top_10_oof": [
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.44450431034482757,
+            "answered_accuracy": 0.8872727272727273,
+            "episodes": 3712,
+            "false_positive_rate": 0.005387931034482759,
+            "macro_f1": 0.5408467661925789,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.3892486625413153,
+            "predictions": {
+              "no": 1052,
+              "wait": 2062,
+              "yes": 598
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "metrics": {
+            "answer_rate": 0.44127155172413796,
+            "answered_accuracy": 0.887057387057387,
+            "episodes": 3712,
+            "false_positive_rate": 0.004849137931034483,
+            "macro_f1": 0.537519700518325,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.38951805909303944,
+            "predictions": {
+              "no": 1052,
+              "wait": 2074,
+              "yes": 586
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.3380926724137931,
+            "answered_accuracy": 0.9290836653386454,
+            "episodes": 3712,
+            "false_positive_rate": 0.005387931034482759,
+            "macro_f1": 0.4696127812635907,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.39019155047234977,
+            "predictions": {
+              "no": 657,
+              "wait": 2457,
+              "yes": 598
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "metrics": {
+            "answer_rate": 0.3348599137931034,
+            "answered_accuracy": 0.9292035398230089,
+            "episodes": 3712,
+            "false_positive_rate": 0.004849137931034483,
+            "macro_f1": 0.46628571558933674,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.3904609470240739,
+            "predictions": {
+              "no": 657,
+              "wait": 2469,
+              "yes": 586
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.44665948275862066,
+            "answered_accuracy": 0.8866103739445115,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.5425052266248909,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.39086504185166016,
+            "predictions": {
+              "no": 1052,
+              "wait": 2054,
+              "yes": 606
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.9
+          },
+          "metrics": {
+            "answer_rate": 0.43292025862068967,
+            "answered_accuracy": 0.8861232109520847,
+            "episodes": 3712,
+            "false_positive_rate": 0.003771551724137931,
+            "macro_f1": 0.5285295444937435,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.3909997401275222,
+            "predictions": {
+              "no": 1052,
+              "wait": 2105,
+              "yes": 555
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.4
+          },
+          "metrics": {
+            "answer_rate": 0.4474676724137931,
+            "answered_accuracy": 0.8862131246237207,
+            "episodes": 3712,
+            "false_positive_rate": 0.007004310344827586,
+            "macro_f1": 0.5430229540946009,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.39180792978269463,
+            "predictions": {
+              "no": 1052,
+              "wait": 2051,
+              "yes": 609
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.3402478448275862,
+            "answered_accuracy": 0.9279493269992082,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.4712712416959027,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.39180792978269463,
+            "predictions": {
+              "no": 657,
+              "wait": 2449,
+              "yes": 606
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.5
+          },
+          "metrics": {
+            "answer_rate": 0.44719827586206895,
+            "answered_accuracy": 0.886144578313253,
+            "episodes": 3712,
+            "false_positive_rate": 0.007004310344827586,
+            "macro_f1": 0.5427152369638615,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.3919426280585567,
+            "predictions": {
+              "no": 1052,
+              "wait": 2052,
+              "yes": 608
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.6
+          },
+          "metrics": {
+            "answer_rate": 0.44719827586206895,
+            "answered_accuracy": 0.886144578313253,
+            "episodes": 3712,
+            "false_positive_rate": 0.007004310344827586,
+            "macro_f1": 0.5427152369638615,
+            "mean_geodesic_m": 3.2034039206256897,
+            "mean_risk": 0.3919426280585567,
+            "predictions": {
+              "no": 1052,
+              "wait": 2052,
+              "yes": 608
+            }
+          }
+        }
+      ]
+    },
+    "coverage_gain": {
+      "categories": [
+        "alarmclock",
+        "basketball",
+        "book",
+        "bottle",
+        "cellulartelephone",
+        "chair",
+        "countertop",
+        "creditcard",
+        "ladle",
+        "laptop",
+        "lettuce",
+        "papertowel",
+        "pillow",
+        "plate",
+        "refrigerator",
+        "saltshaker",
+        "shelf",
+        "sofa",
+        "spatula",
+        "tablelamp",
+        "television",
+        "tennisracket",
+        "toilettissue",
+        "tomato"
+      ],
+      "coefficients": [
+        0.3080821077071711,
+        0.06036935605583222,
+        0.0031629951749078235,
+        0.19776007981364022,
+        0.2430081968834387,
+        0.24156714352256448,
+        0.20424967183880016,
+        0.18087704905295793,
+        0.14656805956567012,
+        0.004374516033370961,
+        0.17501798052030937,
+        0.0,
+        0.1992840247444493,
+        -0.09476583701991183,
+        -0.09731106727568434,
+        0.008674704342972633,
+        -0.0025746998639869525,
+        0.08468272016759809,
+        -0.1883719846056394,
+        0.13414705565713486,
+        -0.03693514122867519,
+        0.050969877960786045,
+        0.10768450936927439,
+        -0.13033042561614103,
+        0.07749999315896329,
+        -0.0059458850786081735,
+        -0.09825347158254027,
+        0.1459435046121159,
+        0.0781924369193892,
+        0.0809809650599095,
+        -0.03562738014959627,
+        -0.14777255548032792,
+        0.04994758152337511,
+        -0.045105301033390596,
+        -0.06724341085975089,
+        0.1316739528443737,
+        -0.21545021819671129,
+        0.08812376918188576,
+        -0.009241774669264728
+      ],
+      "decision": {
+        "no_probability": 0.25,
+        "pair_radius_m": 1.0,
+        "pair_support_threshold": 0.1,
+        "yes_probability": 0.4
+      },
+      "feature_names": [
+        "position_score_1",
+        "position_score_2",
+        "position_score_3",
+        "position_score_top3_mean",
+        "support_positions_ge_0.05",
+        "support_positions_ge_0.10",
+        "support_positions_ge_0.30",
+        "support_positions_ge_0.50",
+        "support_positions_ge_0.70",
+        "position_coverage",
+        "distinct_rooms",
+        "observations",
+        "grounded_fraction",
+        "minimum_grounded_pair_distance_clipped_5m",
+        "maximum_context_score",
+        "category=alarmclock",
+        "category=basketball",
+        "category=book",
+        "category=bottle",
+        "category=cellulartelephone",
+        "category=chair",
+        "category=countertop",
+        "category=creditcard",
+        "category=ladle",
+        "category=laptop",
+        "category=lettuce",
+        "category=papertowel",
+        "category=pillow",
+        "category=plate",
+        "category=refrigerator",
+        "category=saltshaker",
+        "category=shelf",
+        "category=sofa",
+        "category=spatula",
+        "category=tablelamp",
+        "category=television",
+        "category=tennisracket",
+        "category=toilettissue",
+        "category=tomato"
+      ],
+      "folds": 5,
+      "intercept": 0.3257797961414395,
+      "l2": 0.1,
+      "mean": [
+        0.23490210355019622,
+        0.11078649225638745,
+        0.02074512457630621,
+        0.12214457346096319,
+        0.5676185344827587,
+        0.5129310344827587,
+        0.4404633620689655,
+        0.38927801724137934,
+        0.3254310344827586,
+        0.07586206896551204,
+        2.273706896551724,
+        9.0,
+        0.10000598659003744,
+        4.159461223715679,
+        0.9198758582070726,
+        0.03879310344827586,
+        0.04310344827586207,
+        0.04741379310344827,
+        0.05172413793103448,
+        0.03771551724137931,
+        0.04741379310344827,
+        0.03556034482758621,
+        0.03987068965517242,
+        0.04418103448275862,
+        0.040948275862068964,
+        0.03879310344827586,
+        0.04956896551724138,
+        0.04418103448275862,
+        0.03017241379310345,
+        0.040948275862068964,
+        0.036637931034482756,
+        0.04418103448275862,
+        0.04418103448275862,
+        0.03556034482758621,
+        0.04525862068965517,
+        0.04310344827586207,
+        0.04310344827586207,
+        0.03771551724137931,
+        0.03987068965517242
+      ],
+      "oof_metrics": {
+        "answer_rate": 0.35129310344827586,
+        "answered_accuracy": 0.9164110429447853,
+        "episodes": 3712,
+        "false_positive_rate": 0.003232758620689655,
+        "macro_f1": 0.47144936987288155,
+        "mean_geodesic_m": 5.137289400356982,
+        "mean_risk": 0.3930683238831156,
+        "predictions": {
+          "no": 831,
+          "wait": 2408,
+          "yes": 473
+        }
+      },
+      "std": [
+        0.3614198578344101,
+        0.27320030276740553,
+        0.12344008341789993,
+        0.21613792232530304,
+        0.8495415453305954,
+        0.8248202701209301,
+        0.7862713463704413,
+        0.7454049728627492,
+        0.6969142482269358,
+        0.004561640191490807,
+        0.8410779517898013,
+        1.0,
+        0.13787850865343176,
+        1.756177187677713,
+        0.11259808690952687,
+        0.19310152400519145,
+        0.2030899825756871,
+        0.2125222937176141,
+        0.22146952721836202,
+        0.190507367313172,
+        0.21252229371761394,
+        0.18519127059159704,
+        0.19565535454363506,
+        0.20549713057556268,
+        0.19817041798915064,
+        0.19310152400519076,
+        0.21705271980510632,
+        0.20549713057556376,
+        0.17106150718089372,
+        0.1981704179891515,
+        0.1878712139844689,
+        0.20549713057556376,
+        0.2054971305755614,
+        0.18519127059159735,
+        0.20787082032580845,
+        0.20308998257568567,
+        0.20308998257568667,
+        0.19050736731317122,
+        0.19565535454363348
+      ],
+      "top_10_oof": [
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.4
+          },
+          "metrics": {
+            "answer_rate": 0.35129310344827586,
+            "answered_accuracy": 0.9164110429447853,
+            "episodes": 3712,
+            "false_positive_rate": 0.003232758620689655,
+            "macro_f1": 0.47144936987288155,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.3930683238831156,
+            "predictions": {
+              "no": 831,
+              "wait": 2408,
+              "yes": 473
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.5
+          },
+          "metrics": {
+            "answer_rate": 0.35129310344827586,
+            "answered_accuracy": 0.9164110429447853,
+            "episodes": 3712,
+            "false_positive_rate": 0.003232758620689655,
+            "macro_f1": 0.47144936987288155,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.3930683238831156,
+            "predictions": {
+              "no": 831,
+              "wait": 2408,
+              "yes": 473
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.6
+          },
+          "metrics": {
+            "answer_rate": 0.35129310344827586,
+            "answered_accuracy": 0.9164110429447853,
+            "episodes": 3712,
+            "false_positive_rate": 0.003232758620689655,
+            "macro_f1": 0.47144936987288155,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.3930683238831156,
+            "predictions": {
+              "no": 831,
+              "wait": 2408,
+              "yes": 473
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.35129310344827586,
+            "answered_accuracy": 0.9164110429447853,
+            "episodes": 3712,
+            "false_positive_rate": 0.003232758620689655,
+            "macro_f1": 0.47144936987288155,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.3930683238831156,
+            "predictions": {
+              "no": 831,
+              "wait": 2408,
+              "yes": 473
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.35075431034482757,
+            "answered_accuracy": 0.9162826420890937,
+            "episodes": 3712,
+            "false_positive_rate": 0.003232758620689655,
+            "macro_f1": 0.4707622321355317,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.3933377204348397,
+            "predictions": {
+              "no": 831,
+              "wait": 2410,
+              "yes": 471
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.9
+          },
+          "metrics": {
+            "answer_rate": 0.3453663793103448,
+            "answered_accuracy": 0.9165366614664586,
+            "episodes": 3712,
+            "false_positive_rate": 0.0021551724137931034,
+            "macro_f1": 0.46469225471772535,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.3933377204348397,
+            "predictions": {
+              "no": 831,
+              "wait": 2430,
+              "yes": 451
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.4
+          },
+          "metrics": {
+            "answer_rate": 0.3415948275862069,
+            "answered_accuracy": 0.916403785488959,
+            "episodes": 3712,
+            "false_positive_rate": 0.0016163793103448276,
+            "macro_f1": 0.4602058237470037,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.393876513538288,
+            "predictions": {
+              "no": 831,
+              "wait": 2444,
+              "yes": 437
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.5
+          },
+          "metrics": {
+            "answer_rate": 0.3415948275862069,
+            "answered_accuracy": 0.916403785488959,
+            "episodes": 3712,
+            "false_positive_rate": 0.0016163793103448276,
+            "macro_f1": 0.4602058237470037,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.393876513538288,
+            "predictions": {
+              "no": 831,
+              "wait": 2444,
+              "yes": 437
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.6
+          },
+          "metrics": {
+            "answer_rate": 0.3415948275862069,
+            "answered_accuracy": 0.916403785488959,
+            "episodes": 3712,
+            "false_positive_rate": 0.0016163793103448276,
+            "macro_f1": 0.4602058237470037,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.393876513538288,
+            "predictions": {
+              "no": 831,
+              "wait": 2444,
+              "yes": 437
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.3415948275862069,
+            "answered_accuracy": 0.916403785488959,
+            "episodes": 3712,
+            "false_positive_rate": 0.0016163793103448276,
+            "macro_f1": 0.4602058237470037,
+            "mean_geodesic_m": 5.137289400356982,
+            "mean_risk": 0.393876513538288,
+            "predictions": {
+              "no": 831,
+              "wait": 2444,
+              "yes": 437
+            }
+          }
+        }
+      ]
+    },
+    "detector_confidence_gain": {
+      "categories": [
+        "alarmclock",
+        "basketball",
+        "book",
+        "bottle",
+        "cellulartelephone",
+        "chair",
+        "countertop",
+        "creditcard",
+        "ladle",
+        "laptop",
+        "lettuce",
+        "papertowel",
+        "pillow",
+        "plate",
+        "refrigerator",
+        "saltshaker",
+        "shelf",
+        "sofa",
+        "spatula",
+        "tablelamp",
+        "television",
+        "tennisracket",
+        "toilettissue",
+        "tomato"
+      ],
+      "coefficients": [
+        0.30714066355279984,
+        0.04608815986912209,
+        -0.003140979456986961,
+        0.19982132054332583,
+        0.229129796877336,
+        0.24819905975061093,
+        0.20211612847823573,
+        0.18034613953824907,
+        0.16299603440640859,
+        0.006936099845603993,
+        0.14464978751417853,
+        0.0,
+        0.18435314644935757,
+        -0.07303842497872605,
+        -0.09789305899792577,
+        0.0051432909684168224,
+        -0.0019974417465940092,
+        0.08760237716836713,
+        -0.18742646498169807,
+        0.13163899583983443,
+        -0.039764563602134206,
+        0.06394674781241284,
+        0.11155927979698282,
+        -0.12897934052424767,
+        0.07857223960314907,
+        -0.01557169581268197,
+        -0.10147653092270952,
+        0.13302825495466067,
+        0.08054067332367974,
+        0.08430739517490757,
+        -0.038335053650429295,
+        -0.14023683683312335,
+        0.049521998029790466,
+        -0.04284935878886798,
+        -0.06647410029327908,
+        0.13195366132110342,
+        -0.21459727660937145,
+        0.086268511882379,
+        -0.009715898590391599
+      ],
+      "decision": {
+        "no_probability": 0.25,
+        "pair_radius_m": 1.0,
+        "pair_support_threshold": 0.1,
+        "yes_probability": 0.4
+      },
+      "feature_names": [
+        "position_score_1",
+        "position_score_2",
+        "position_score_3",
+        "position_score_top3_mean",
+        "support_positions_ge_0.05",
+        "support_positions_ge_0.10",
+        "support_positions_ge_0.30",
+        "support_positions_ge_0.50",
+        "support_positions_ge_0.70",
+        "position_coverage",
+        "distinct_rooms",
+        "observations",
+        "grounded_fraction",
+        "minimum_grounded_pair_distance_clipped_5m",
+        "maximum_context_score",
+        "category=alarmclock",
+        "category=basketball",
+        "category=book",
+        "category=bottle",
+        "category=cellulartelephone",
+        "category=chair",
+        "category=countertop",
+        "category=creditcard",
+        "category=ladle",
+        "category=laptop",
+        "category=lettuce",
+        "category=papertowel",
+        "category=pillow",
+        "category=plate",
+        "category=refrigerator",
+        "category=saltshaker",
+        "category=shelf",
+        "category=sofa",
+        "category=spatula",
+        "category=tablelamp",
+        "category=television",
+        "category=tennisracket",
+        "category=toilettissue",
+        "category=tomato"
+      ],
+      "folds": 5,
+      "intercept": 0.30815710034665084,
+      "l2": 0.1,
+      "mean": [
+        0.23617661748069402,
+        0.12256371864174886,
+        0.005605210586509202,
+        0.12144851556965061,
+        0.5651939655172413,
+        0.5094288793103449,
+        0.4380387931034483,
+        0.3900862068965517,
+        0.3232758620689655,
+        0.07576778017240861,
+        2.128771551724138,
+        9.0,
+        0.10057471264367752,
+        4.041490897092125,
+        0.9163540928415825,
+        0.03879310344827586,
+        0.04310344827586207,
+        0.04741379310344827,
+        0.05172413793103448,
+        0.03771551724137931,
+        0.04741379310344827,
+        0.03556034482758621,
+        0.03987068965517242,
+        0.04418103448275862,
+        0.040948275862068964,
+        0.03879310344827586,
+        0.04956896551724138,
+        0.04418103448275862,
+        0.03017241379310345,
+        0.040948275862068964,
+        0.036637931034482756,
+        0.04418103448275862,
+        0.04418103448275862,
+        0.03556034482758621,
+        0.04525862068965517,
+        0.04310344827586207,
+        0.04310344827586207,
+        0.03771551724137931,
+        0.03987068965517242
+      ],
+      "oof_metrics": {
+        "answer_rate": 0.37580818965517243,
+        "answered_accuracy": 0.9161290322580645,
+        "episodes": 3712,
+        "false_positive_rate": 0.00646551724137931,
+        "macro_f1": 0.4983361029069605,
+        "mean_geodesic_m": 4.814207145542806,
+        "mean_risk": 0.3896471812834738,
+        "predictions": {
+          "no": 830,
+          "wait": 2317,
+          "yes": 565
+        }
+      },
+      "std": [
+        0.3616393638461186,
+        0.28481352114839453,
+        0.060654866845658365,
+        0.2068684316671259,
+        0.814110317419633,
+        0.7932347956705554,
+        0.7578164743788159,
+        0.723518695621043,
+        0.6695479378965082,
+        0.004313353442183087,
+        0.8654726381963377,
+        1.0,
+        0.13687015523702095,
+        1.8599063507625084,
+        0.12360320218676402,
+        0.19310152400519145,
+        0.2030899825756871,
+        0.2125222937176141,
+        0.22146952721836202,
+        0.190507367313172,
+        0.21252229371761394,
+        0.18519127059159704,
+        0.19565535454363506,
+        0.20549713057556268,
+        0.19817041798915064,
+        0.19310152400519076,
+        0.21705271980510632,
+        0.20549713057556376,
+        0.17106150718089372,
+        0.1981704179891515,
+        0.1878712139844689,
+        0.20549713057556376,
+        0.2054971305755614,
+        0.18519127059159735,
+        0.20787082032580845,
+        0.20308998257568567,
+        0.20308998257568667,
+        0.19050736731317122,
+        0.19565535454363348
+      ],
+      "top_10_oof": [
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.4
+          },
+          "metrics": {
+            "answer_rate": 0.37580818965517243,
+            "answered_accuracy": 0.9161290322580645,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.4983361029069605,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.3896471812834738,
+            "predictions": {
+              "no": 830,
+              "wait": 2317,
+              "yes": 565
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.5
+          },
+          "metrics": {
+            "answer_rate": 0.3755387931034483,
+            "answered_accuracy": 0.9160688665710186,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.4980172673735254,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.3897818795593359,
+            "predictions": {
+              "no": 830,
+              "wait": 2318,
+              "yes": 564
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.6
+          },
+          "metrics": {
+            "answer_rate": 0.3755387931034483,
+            "answered_accuracy": 0.9160688665710186,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.4980172673735254,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.3897818795593359,
+            "predictions": {
+              "no": 830,
+              "wait": 2318,
+              "yes": 564
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.37526939655172414,
+            "answered_accuracy": 0.9160086145010768,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.49769816823072,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.38991657783519795,
+            "predictions": {
+              "no": 830,
+              "wait": 2319,
+              "yes": 563
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.4
+          },
+          "metrics": {
+            "answer_rate": 0.4709051724137931,
+            "answered_accuracy": 0.881578947368421,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.5535249521605334,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.3905900692145083,
+            "predictions": {
+              "no": 1183,
+              "wait": 1964,
+              "yes": 565
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.3739224137931034,
+            "answered_accuracy": 0.9157060518731989,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.49609870691011293,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.3905900692145083,
+            "predictions": {
+              "no": 830,
+              "wait": 2324,
+              "yes": 558
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.95
+          },
+          "metrics": {
+            "answer_rate": 0.35237068965517243,
+            "answered_accuracy": 0.9166666666666666,
+            "episodes": 3712,
+            "false_positive_rate": 0.0021551724137931034,
+            "macro_f1": 0.47300292672469074,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.3905900692145083,
+            "predictions": {
+              "no": 830,
+              "wait": 2404,
+              "yes": 478
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.5
+          },
+          "metrics": {
+            "answer_rate": 0.47063577586206895,
+            "answered_accuracy": 0.8815111619919863,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.5532061166270984,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.3907247674903704,
+            "predictions": {
+              "no": 1183,
+              "wait": 1965,
+              "yes": 564
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.6
+          },
+          "metrics": {
+            "answer_rate": 0.47063577586206895,
+            "answered_accuracy": 0.8815111619919863,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.5532061166270984,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.3907247674903704,
+            "predictions": {
+              "no": 1183,
+              "wait": 1965,
+              "yes": 564
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.4703663793103448,
+            "answered_accuracy": 0.8814432989690721,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.552887017484293,
+            "mean_geodesic_m": 4.814207145542806,
+            "mean_risk": 0.39085946576623243,
+            "predictions": {
+              "no": 1183,
+              "wait": 1966,
+              "yes": 563
+            }
+          }
+        }
+      ]
+    },
+    "nearest_frontier": {
+      "categories": [
+        "alarmclock",
+        "basketball",
+        "book",
+        "bottle",
+        "cellulartelephone",
+        "chair",
+        "countertop",
+        "creditcard",
+        "ladle",
+        "laptop",
+        "lettuce",
+        "papertowel",
+        "pillow",
+        "plate",
+        "refrigerator",
+        "saltshaker",
+        "shelf",
+        "sofa",
+        "spatula",
+        "tablelamp",
+        "television",
+        "tennisracket",
+        "toilettissue",
+        "tomato"
+      ],
+      "coefficients": [
+        0.2524521065750266,
+        0.08783055336296625,
+        0.009575852322167285,
+        0.16333212562232347,
+        0.18129258518101918,
+        0.16743009096365805,
+        0.16328083873955868,
+        0.15519494024595729,
+        0.14071274076856755,
+        1.1875211797664349e-18,
+        0.06193385746062626,
+        0.0,
+        0.1592960281088464,
+        -0.1118728043460098,
+        -0.09380898372308402,
+        -0.0049848841624738705,
+        0.0013919904618702901,
+        0.07616886721902141,
+        -0.1972241683697419,
+        0.1139477363159594,
+        -0.018652163252603125,
+        0.08894984588736109,
+        0.08731896499918393,
+        -0.1493848162352267,
+        0.060912893153859754,
+        -0.015443889202463531,
+        -0.09870064983118093,
+        0.16953361792861152,
+        0.07687151988597982,
+        0.0964715366672771,
+        -0.04133573087517307,
+        -0.13521445885188918,
+        0.06205731876408115,
+        -0.06013467094403587,
+        -0.05642416436758611,
+        0.155126740350351,
+        -0.2322388172217465,
+        0.09115595964793237,
+        -0.016579083088984068
+      ],
+      "decision": {
+        "no_probability": 0.3,
+        "pair_radius_m": 1.0,
+        "pair_support_threshold": 0.1,
+        "yes_probability": 0.85
+      },
+      "feature_names": [
+        "position_score_1",
+        "position_score_2",
+        "position_score_3",
+        "position_score_top3_mean",
+        "support_positions_ge_0.05",
+        "support_positions_ge_0.10",
+        "support_positions_ge_0.30",
+        "support_positions_ge_0.50",
+        "support_positions_ge_0.70",
+        "position_coverage",
+        "distinct_rooms",
+        "observations",
+        "grounded_fraction",
+        "minimum_grounded_pair_distance_clipped_5m",
+        "maximum_context_score",
+        "category=alarmclock",
+        "category=basketball",
+        "category=book",
+        "category=bottle",
+        "category=cellulartelephone",
+        "category=chair",
+        "category=countertop",
+        "category=creditcard",
+        "category=ladle",
+        "category=laptop",
+        "category=lettuce",
+        "category=papertowel",
+        "category=pillow",
+        "category=plate",
+        "category=refrigerator",
+        "category=saltshaker",
+        "category=shelf",
+        "category=sofa",
+        "category=spatula",
+        "category=tablelamp",
+        "category=television",
+        "category=tennisracket",
+        "category=toilettissue",
+        "category=tomato"
+      ],
+      "folds": 5,
+      "intercept": 0.2720058548753083,
+      "l2": 0.1,
+      "mean": [
+        0.21096664205758536,
+        0.1321262597728115,
+        0.03346527377213753,
+        0.12551939186751143,
+        0.5886314655172413,
+        0.5261314655172413,
+        0.44935344827586204,
+        0.4027478448275862,
+        0.33405172413793105,
+        0.07499999999999479,
+        1.2319504310344827,
+        9.0,
+        0.10398706896551654,
+        3.9017631903603323,
+        0.9008235143866904,
+        0.03879310344827586,
+        0.04310344827586207,
+        0.04741379310344827,
+        0.05172413793103448,
+        0.03771551724137931,
+        0.04741379310344827,
+        0.03556034482758621,
+        0.03987068965517242,
+        0.04418103448275862,
+        0.040948275862068964,
+        0.03879310344827586,
+        0.04956896551724138,
+        0.04418103448275862,
+        0.03017241379310345,
+        0.040948275862068964,
+        0.036637931034482756,
+        0.04418103448275862,
+        0.04418103448275862,
+        0.03556034482758621,
+        0.04525862068965517,
+        0.04310344827586207,
+        0.04310344827586207,
+        0.03771551724137931,
+        0.03987068965517242
+      ],
+      "oof_metrics": {
+        "answer_rate": 0.42322198275862066,
+        "answered_accuracy": 0.8860598345003182,
+        "episodes": 3712,
+        "false_positive_rate": 0.004849137931034483,
+        "macro_f1": 0.5235740654878217,
+        "mean_geodesic_m": 2.841606791677146,
+        "mean_risk": 0.3949482878261599,
+        "predictions": {
+          "no": 978,
+          "wait": 2141,
+          "yes": 593
+        }
+      },
+      "std": [
+        0.3495136475546377,
+        0.2932760386306668,
+        0.157695010592213,
+        0.235724431749526,
+        0.9219018841557671,
+        0.8971136138556397,
+        0.8564031212628475,
+        0.8208115943910211,
+        0.757109952439693,
+        1.0,
+        0.461120577721386,
+        1.0,
+        0.14794179473892635,
+        1.9619808774355154,
+        0.15983666642545957,
+        0.19310152400519145,
+        0.2030899825756871,
+        0.2125222937176141,
+        0.22146952721836202,
+        0.190507367313172,
+        0.21252229371761394,
+        0.18519127059159704,
+        0.19565535454363506,
+        0.20549713057556268,
+        0.19817041798915064,
+        0.19310152400519076,
+        0.21705271980510632,
+        0.20549713057556376,
+        0.17106150718089372,
+        0.1981704179891515,
+        0.1878712139844689,
+        0.20549713057556376,
+        0.2054971305755614,
+        0.18519127059159735,
+        0.20787082032580845,
+        0.20308998257568567,
+        0.20308998257568667,
+        0.19050736731317122,
+        0.19565535454363348
+      ],
+      "top_10_oof": [
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "metrics": {
+            "answer_rate": 0.42322198275862066,
+            "answered_accuracy": 0.8860598345003182,
+            "episodes": 3712,
+            "false_positive_rate": 0.004849137931034483,
+            "macro_f1": 0.5235740654878217,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.3949482878261599,
+            "predictions": {
+              "no": 978,
+              "wait": 2141,
+              "yes": 593
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.4280711206896552,
+            "answered_accuracy": 0.8860918816865954,
+            "episodes": 3712,
+            "false_positive_rate": 0.005926724137931034,
+            "macro_f1": 0.5283197630029015,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.39521768437788407,
+            "predictions": {
+              "no": 978,
+              "wait": 2123,
+              "yes": 611
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.9
+          },
+          "metrics": {
+            "answer_rate": 0.4151400862068966,
+            "answered_accuracy": 0.8851395197923426,
+            "episodes": 3712,
+            "false_positive_rate": 0.003771551724137931,
+            "macro_f1": 0.5149564302599714,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.3962952705847806,
+            "predictions": {
+              "no": 978,
+              "wait": 2171,
+              "yes": 563
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "metrics": {
+            "answer_rate": 0.3337823275862069,
+            "answered_accuracy": 0.9176755447941889,
+            "episodes": 3712,
+            "false_positive_rate": 0.004849137931034483,
+            "macro_f1": 0.4594878609158406,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.39818104644684954,
+            "predictions": {
+              "no": 646,
+              "wait": 2473,
+              "yes": 593
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.3386314655172414,
+            "answered_accuracy": 0.9172633253778838,
+            "episodes": 3712,
+            "false_positive_rate": 0.005926724137931034,
+            "macro_f1": 0.4642335584309204,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.3984504429985737,
+            "predictions": {
+              "no": 646,
+              "wait": 2455,
+              "yes": 611
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.41594827586206895,
+            "answered_accuracy": 0.8840673575129534,
+            "episodes": 3712,
+            "false_positive_rate": 0.004849137931034483,
+            "macro_f1": 0.5150846131118709,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.3985851412744358,
+            "predictions": {
+              "no": 978,
+              "wait": 2168,
+              "yes": 566
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.4307650862068966,
+            "answered_accuracy": 0.884302689180738,
+            "episodes": 3712,
+            "false_positive_rate": 0.008081896551724138,
+            "macro_f1": 0.5297601732694495,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.3992586326537461,
+            "predictions": {
+              "no": 978,
+              "wait": 2113,
+              "yes": 621
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.4
+          },
+          "metrics": {
+            "answer_rate": 0.4331896551724138,
+            "answered_accuracy": 0.8843283582089553,
+            "episodes": 3712,
+            "false_positive_rate": 0.008620689655172414,
+            "macro_f1": 0.5320924914170022,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.3993933309296082,
+            "predictions": {
+              "no": 978,
+              "wait": 2104,
+              "yes": 630
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.5
+          },
+          "metrics": {
+            "answer_rate": 0.4331896551724138,
+            "answered_accuracy": 0.8843283582089553,
+            "episodes": 3712,
+            "false_positive_rate": 0.008620689655172414,
+            "macro_f1": 0.5320924914170022,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.3993933309296082,
+            "predictions": {
+              "no": 978,
+              "wait": 2104,
+              "yes": 630
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.9
+          },
+          "metrics": {
+            "answer_rate": 0.32570043103448276,
+            "answered_accuracy": 0.9172870140612076,
+            "episodes": 3712,
+            "false_positive_rate": 0.003771551724137931,
+            "macro_f1": 0.4508702256879903,
+            "mean_geodesic_m": 2.841606791677146,
+            "mean_risk": 0.3995280292054702,
+            "predictions": {
+              "no": 646,
+              "wait": 2503,
+              "yes": 563
+            }
+          }
+        }
+      ]
+    },
+    "random": {
+      "categories": [
+        "alarmclock",
+        "basketball",
+        "book",
+        "bottle",
+        "cellulartelephone",
+        "chair",
+        "countertop",
+        "creditcard",
+        "ladle",
+        "laptop",
+        "lettuce",
+        "papertowel",
+        "pillow",
+        "plate",
+        "refrigerator",
+        "saltshaker",
+        "shelf",
+        "sofa",
+        "spatula",
+        "tablelamp",
+        "television",
+        "tennisracket",
+        "toilettissue",
+        "tomato"
+      ],
+      "coefficients": [
+        0.33622562035754994,
+        0.0693052562760184,
+        0.015944102160775693,
+        0.20540408905043533,
+        0.19519081103766453,
+        0.20659488238720936,
+        0.1906761873133203,
+        0.16974873755610254,
+        0.16662210705062813,
+        -0.12432952987066236,
+        0.09249477698211554,
+        -0.035540994355047664,
+        0.21597512772327143,
+        -0.10003566335386586,
+        -0.020058503497893464,
+        -0.02063869475092416,
+        -0.022736951093629536,
+        0.08597907835596888,
+        -0.18443436095520313,
+        0.11912084948511896,
+        0.0004394369592505454,
+        0.05918933559298909,
+        0.09861395538009783,
+        -0.1500829334630026,
+        0.04623622484687355,
+        -0.0036822570301090437,
+        -0.0955522834590448,
+        0.17707575238209083,
+        0.06171770981281632,
+        0.09019224260465508,
+        -0.024939044489011967,
+        -0.1501780617422438,
+        0.05978028459178236,
+        -0.05120184178382072,
+        -0.07006982099238374,
+        0.15882603959958244,
+        -0.22026201696644293,
+        0.09716297559858639,
+        -0.011646983774487111
+      ],
+      "decision": {
+        "no_probability": 0.3,
+        "pair_radius_m": 1.0,
+        "pair_support_threshold": 0.1,
+        "yes_probability": 0.4
+      },
+      "feature_names": [
+        "position_score_1",
+        "position_score_2",
+        "position_score_3",
+        "position_score_top3_mean",
+        "support_positions_ge_0.05",
+        "support_positions_ge_0.10",
+        "support_positions_ge_0.30",
+        "support_positions_ge_0.50",
+        "support_positions_ge_0.70",
+        "position_coverage",
+        "distinct_rooms",
+        "observations",
+        "grounded_fraction",
+        "minimum_grounded_pair_distance_clipped_5m",
+        "maximum_context_score",
+        "category=alarmclock",
+        "category=basketball",
+        "category=book",
+        "category=bottle",
+        "category=cellulartelephone",
+        "category=chair",
+        "category=countertop",
+        "category=creditcard",
+        "category=ladle",
+        "category=laptop",
+        "category=lettuce",
+        "category=papertowel",
+        "category=pillow",
+        "category=plate",
+        "category=refrigerator",
+        "category=saltshaker",
+        "category=shelf",
+        "category=sofa",
+        "category=spatula",
+        "category=tablelamp",
+        "category=television",
+        "category=tennisracket",
+        "category=toilettissue",
+        "category=tomato"
+      ],
+      "folds": 5,
+      "intercept": 0.3288608813941669,
+      "l2": 0.1,
+      "mean": [
+        0.22159034069446878,
+        0.09962796825154861,
+        0.03996975383930037,
+        0.12039602092843935,
+        0.5889008620689655,
+        0.5304418103448276,
+        0.4458512931034483,
+        0.4005926724137931,
+        0.33216594827586204,
+        0.13601158405172448,
+        2.097790948275862,
+        8.170797413793103,
+        0.10237325533661717,
+        4.2453839077930775,
+        0.9255172005806375,
+        0.03879310344827586,
+        0.04310344827586207,
+        0.04741379310344827,
+        0.05172413793103448,
+        0.03771551724137931,
+        0.04741379310344827,
+        0.03556034482758621,
+        0.03987068965517242,
+        0.04418103448275862,
+        0.040948275862068964,
+        0.03879310344827586,
+        0.04956896551724138,
+        0.04418103448275862,
+        0.03017241379310345,
+        0.040948275862068964,
+        0.036637931034482756,
+        0.04418103448275862,
+        0.04418103448275862,
+        0.03556034482758621,
+        0.04525862068965517,
+        0.04310344827586207,
+        0.04310344827586207,
+        0.03771551724137931,
+        0.03987068965517242
+      ],
+      "oof_metrics": {
+        "answer_rate": 0.4014008620689655,
+        "answered_accuracy": 0.8738255033557047,
+        "episodes": 3712,
+        "false_positive_rate": 0.0010775862068965517,
+        "macro_f1": 0.4854118222781515,
+        "mean_geodesic_m": 19.309074896757075,
+        "mean_risk": 0.421518126620895,
+        "predictions": {
+          "no": 1073,
+          "wait": 2222,
+          "yes": 417
+        }
+      },
+      "std": [
+        0.3561788232788719,
+        0.2601905007819374,
+        0.16851000928501075,
+        0.2279665034988657,
+        0.9917035580596948,
+        0.9509183508461727,
+        0.8982616278257592,
+        0.8495876751135762,
+        0.7735942802219862,
+        0.038951009867383486,
+        0.8559348283808059,
+        0.9999615347741238,
+        0.14430927390009687,
+        1.6599130389656893,
+        0.09712158967268567,
+        0.19310152400519145,
+        0.2030899825756871,
+        0.2125222937176141,
+        0.22146952721836202,
+        0.190507367313172,
+        0.21252229371761394,
+        0.18519127059159704,
+        0.19565535454363506,
+        0.20549713057556268,
+        0.19817041798915064,
+        0.19310152400519076,
+        0.21705271980510632,
+        0.20549713057556376,
+        0.17106150718089372,
+        0.1981704179891515,
+        0.1878712139844689,
+        0.20549713057556376,
+        0.2054971305755614,
+        0.18519127059159735,
+        0.20787082032580845,
+        0.20308998257568567,
+        0.20308998257568667,
+        0.19050736731317122,
+        0.19565535454363348
+      ],
+      "top_10_oof": [
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.4
+          },
+          "metrics": {
+            "answer_rate": 0.4014008620689655,
+            "answered_accuracy": 0.8738255033557047,
+            "episodes": 3712,
+            "false_positive_rate": 0.0010775862068965517,
+            "macro_f1": 0.4854118222781515,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.421518126620895,
+            "predictions": {
+              "no": 1073,
+              "wait": 2222,
+              "yes": 417
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.5
+          },
+          "metrics": {
+            "answer_rate": 0.4014008620689655,
+            "answered_accuracy": 0.8738255033557047,
+            "episodes": 3712,
+            "false_positive_rate": 0.0010775862068965517,
+            "macro_f1": 0.4854118222781515,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.421518126620895,
+            "predictions": {
+              "no": 1073,
+              "wait": 2222,
+              "yes": 417
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.6
+          },
+          "metrics": {
+            "answer_rate": 0.4011314655172414,
+            "answered_accuracy": 0.8737407656145064,
+            "episodes": 3712,
+            "false_positive_rate": 0.0010775862068965517,
+            "macro_f1": 0.48505204150818193,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.42165282489675704,
+            "predictions": {
+              "no": 1073,
+              "wait": 2223,
+              "yes": 416
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.4011314655172414,
+            "answered_accuracy": 0.8737407656145064,
+            "episodes": 3712,
+            "false_positive_rate": 0.0010775862068965517,
+            "macro_f1": 0.48505204150818193,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.42165282489675704,
+            "predictions": {
+              "no": 1073,
+              "wait": 2223,
+              "yes": 416
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "metrics": {
+            "answer_rate": 0.3984375,
+            "answered_accuracy": 0.8735632183908046,
+            "episodes": 3712,
+            "false_positive_rate": 0.0005387931034482759,
+            "macro_f1": 0.4818788244872233,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.42165282489675704,
+            "predictions": {
+              "no": 1073,
+              "wait": 2233,
+              "yes": 406
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.9
+          },
+          "metrics": {
+            "answer_rate": 0.3954741379310345,
+            "answered_accuracy": 0.8732970027247956,
+            "episodes": 3712,
+            "false_positive_rate": 0.0,
+            "macro_f1": 0.4783112971754597,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.4217875231726192,
+            "predictions": {
+              "no": 1073,
+              "wait": 2244,
+              "yes": 395
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.4
+          },
+          "metrics": {
+            "answer_rate": 0.31115301724137934,
+            "answered_accuracy": 0.9090909090909091,
+            "episodes": 3712,
+            "false_positive_rate": 0.0010775862068965517,
+            "macro_f1": 0.42737377297299495,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.42192222144848124,
+            "predictions": {
+              "no": 738,
+              "wait": 2557,
+              "yes": 417
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.5
+          },
+          "metrics": {
+            "answer_rate": 0.31115301724137934,
+            "answered_accuracy": 0.9090909090909091,
+            "episodes": 3712,
+            "false_positive_rate": 0.0010775862068965517,
+            "macro_f1": 0.42737377297299495,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.42192222144848124,
+            "predictions": {
+              "no": 738,
+              "wait": 2557,
+              "yes": 417
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.6
+          },
+          "metrics": {
+            "answer_rate": 0.3108836206896552,
+            "answered_accuracy": 0.9090121317157712,
+            "episodes": 3712,
+            "false_positive_rate": 0.0010775862068965517,
+            "macro_f1": 0.4270139922030254,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.4220569197243433,
+            "predictions": {
+              "no": 738,
+              "wait": 2558,
+              "yes": 416
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.3108836206896552,
+            "answered_accuracy": 0.9090121317157712,
+            "episodes": 3712,
+            "false_positive_rate": 0.0010775862068965517,
+            "macro_f1": 0.4270139922030254,
+            "mean_geodesic_m": 19.309074896757075,
+            "mean_risk": 0.4220569197243433,
+            "predictions": {
+              "no": 738,
+              "wait": 2558,
+              "yes": 416
+            }
+          }
+        }
+      ]
+    },
+    "safevantage_fixed_horizon": {
+      "categories": [
+        "alarmclock",
+        "basketball",
+        "book",
+        "bottle",
+        "cellulartelephone",
+        "chair",
+        "countertop",
+        "creditcard",
+        "ladle",
+        "laptop",
+        "lettuce",
+        "papertowel",
+        "pillow",
+        "plate",
+        "refrigerator",
+        "saltshaker",
+        "shelf",
+        "sofa",
+        "spatula",
+        "tablelamp",
+        "television",
+        "tennisracket",
+        "toilettissue",
+        "tomato"
+      ],
+      "coefficients": [
+        0.24377693355645816,
+        0.1206714654042563,
+        0.04519122760257948,
+        0.15786931482099065,
+        0.17724568455313044,
+        0.163101761331435,
+        0.1566229016928194,
+        0.15546262834412258,
+        0.13008742314985677,
+        -0.024723245580020037,
+        0.07385270438922582,
+        0.0,
+        0.17432558730961223,
+        -0.14256927211546871,
+        -0.07896012050690121,
+        -0.0016044991626480048,
+        0.006588206327351733,
+        0.08474952083814438,
+        -0.2063337554362337,
+        0.12170588902558954,
+        -0.027125110810149455,
+        0.08657882709000886,
+        0.09091581995717357,
+        -0.14777804878982082,
+        0.06679929565797421,
+        -0.01349720416556102,
+        -0.10433034599880066,
+        0.15136513684919425,
+        0.08335286244763353,
+        0.09208286161975135,
+        -0.0423704659403986,
+        -0.1376866751725888,
+        0.06172583724007271,
+        -0.05677618001905413,
+        -0.056258650187936,
+        0.15813849561515053,
+        -0.2298448895421003,
+        0.0914041750476,
+        -0.01475511475258541
+      ],
+      "decision": {
+        "no_probability": 0.3,
+        "pair_radius_m": 1.0,
+        "pair_support_threshold": 0.1,
+        "yes_probability": 0.85
+      },
+      "feature_names": [
+        "position_score_1",
+        "position_score_2",
+        "position_score_3",
+        "position_score_top3_mean",
+        "support_positions_ge_0.05",
+        "support_positions_ge_0.10",
+        "support_positions_ge_0.30",
+        "support_positions_ge_0.50",
+        "support_positions_ge_0.70",
+        "position_coverage",
+        "distinct_rooms",
+        "observations",
+        "grounded_fraction",
+        "minimum_grounded_pair_distance_clipped_5m",
+        "maximum_context_score",
+        "category=alarmclock",
+        "category=basketball",
+        "category=book",
+        "category=bottle",
+        "category=cellulartelephone",
+        "category=chair",
+        "category=countertop",
+        "category=creditcard",
+        "category=ladle",
+        "category=laptop",
+        "category=lettuce",
+        "category=papertowel",
+        "category=pillow",
+        "category=plate",
+        "category=refrigerator",
+        "category=saltshaker",
+        "category=shelf",
+        "category=sofa",
+        "category=spatula",
+        "category=tablelamp",
+        "category=television",
+        "category=tennisracket",
+        "category=toilettissue",
+        "category=tomato"
+      ],
+      "folds": 5,
+      "intercept": 0.30060549227986344,
+      "l2": 0.1,
+      "mean": [
+        0.21579370865521044,
+        0.15647454473520186,
+        0.09156006830292834,
+        0.15460944056444703,
+        0.7098599137931034,
+        0.6462823275862069,
+        0.5619612068965517,
+        0.5048491379310345,
+        0.41783405172413796,
+        0.07580818965516736,
+        1.3515625,
+        9.0,
+        0.11619971264367704,
+        3.753709332482116,
+        0.9050124036549623,
+        0.03879310344827586,
+        0.04310344827586207,
+        0.04741379310344827,
+        0.05172413793103448,
+        0.03771551724137931,
+        0.04741379310344827,
+        0.03556034482758621,
+        0.03987068965517242,
+        0.04418103448275862,
+        0.040948275862068964,
+        0.03879310344827586,
+        0.04956896551724138,
+        0.04418103448275862,
+        0.03017241379310345,
+        0.040948275862068964,
+        0.036637931034482756,
+        0.04418103448275862,
+        0.04418103448275862,
+        0.03556034482758621,
+        0.04525862068965517,
+        0.04310344827586207,
+        0.04310344827586207,
+        0.03771551724137931,
+        0.03987068965517242
+      ],
+      "oof_metrics": {
+        "answer_rate": 0.4722521551724138,
+        "answered_accuracy": 0.8921848260125499,
+        "episodes": 3712,
+        "false_positive_rate": 0.007543103448275862,
+        "macro_f1": 0.5712076632676366,
+        "mean_geodesic_m": 2.8945858840477365,
+        "mean_risk": 0.3799150600219788,
+        "predictions": {
+          "no": 1029,
+          "wait": 1959,
+          "yes": 724
+        }
+      },
+      "std": [
+        0.35518777924380546,
+        0.3146054572649779,
+        0.24923177651806364,
+        0.2867637267055294,
+        1.1200224086566881,
+        1.0991484625403745,
+        1.0529808010883193,
+        1.0080378360780187,
+        0.9283228100733707,
+        0.007432806600741717,
+        0.5566532675893388,
+        1.0,
+        0.1644591032477088,
+        2.0739430845201205,
+        0.15005832579588554,
+        0.19310152400519145,
+        0.2030899825756871,
+        0.2125222937176141,
+        0.22146952721836202,
+        0.190507367313172,
+        0.21252229371761394,
+        0.18519127059159704,
+        0.19565535454363506,
+        0.20549713057556268,
+        0.19817041798915064,
+        0.19310152400519076,
+        0.21705271980510632,
+        0.20549713057556376,
+        0.17106150718089372,
+        0.1981704179891515,
+        0.1878712139844689,
+        0.20549713057556376,
+        0.2054971305755614,
+        0.18519127059159735,
+        0.20787082032580845,
+        0.20308998257568567,
+        0.20308998257568667,
+        0.19050736731317122,
+        0.19565535454363348
+      ],
+      "top_10_oof": [
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.4722521551724138,
+            "answered_accuracy": 0.8921848260125499,
+            "episodes": 3712,
+            "false_positive_rate": 0.007543103448275862,
+            "macro_f1": 0.5712076632676366,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3799150600219788,
+            "predictions": {
+              "no": 1029,
+              "wait": 1959,
+              "yes": 724
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.4
+          },
+          "metrics": {
+            "answer_rate": 0.46282327586206895,
+            "answered_accuracy": 0.8917345750873108,
+            "episodes": 3712,
+            "false_positive_rate": 0.005926724137931034,
+            "macro_f1": 0.5624185799457256,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3805885514012891,
+            "predictions": {
+              "no": 1029,
+              "wait": 1994,
+              "yes": 689
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.5
+          },
+          "metrics": {
+            "answer_rate": 0.46282327586206895,
+            "answered_accuracy": 0.8917345750873108,
+            "episodes": 3712,
+            "false_positive_rate": 0.005926724137931034,
+            "macro_f1": 0.5624185799457256,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3805885514012891,
+            "predictions": {
+              "no": 1029,
+              "wait": 1994,
+              "yes": 689
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.6
+          },
+          "metrics": {
+            "answer_rate": 0.46282327586206895,
+            "answered_accuracy": 0.8917345750873108,
+            "episodes": 3712,
+            "false_positive_rate": 0.005926724137931034,
+            "macro_f1": 0.5624185799457256,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3805885514012891,
+            "predictions": {
+              "no": 1029,
+              "wait": 1994,
+              "yes": 689
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.7
+          },
+          "metrics": {
+            "answer_rate": 0.46282327586206895,
+            "answered_accuracy": 0.8917345750873108,
+            "episodes": 3712,
+            "false_positive_rate": 0.005926724137931034,
+            "macro_f1": 0.5624185799457256,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3805885514012891,
+            "predictions": {
+              "no": 1029,
+              "wait": 1994,
+              "yes": 689
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.9
+          },
+          "metrics": {
+            "answer_rate": 0.45123922413793105,
+            "answered_accuracy": 0.8913432835820896,
+            "episodes": 3712,
+            "false_positive_rate": 0.003771551724137931,
+            "macro_f1": 0.5514095482712618,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3809926462288753,
+            "predictions": {
+              "no": 1029,
+              "wait": 2037,
+              "yes": 646
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.4609375,
+            "answered_accuracy": 0.891291642314436,
+            "episodes": 3712,
+            "false_positive_rate": 0.005926724137931034,
+            "macro_f1": 0.5603952674972993,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3815314393323236,
+            "predictions": {
+              "no": 1029,
+              "wait": 2001,
+              "yes": 682
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "metrics": {
+            "answer_rate": 0.46336206896551724,
+            "answered_accuracy": 0.8912790697674419,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.5626020077312555,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3816661376081857,
+            "predictions": {
+              "no": 1029,
+              "wait": 1992,
+              "yes": 691
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.25,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "metrics": {
+            "answer_rate": 0.3733836206896552,
+            "answered_accuracy": 0.9271284271284271,
+            "episodes": 3712,
+            "false_positive_rate": 0.007543103448275862,
+            "macro_f1": 0.5035496364162526,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3819355341599099,
+            "predictions": {
+              "no": 662,
+              "wait": 2326,
+              "yes": 724
+            }
+          }
+        },
+        {
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.3,
+            "yes_probability": 0.85
+          },
+          "metrics": {
+            "answer_rate": 0.4560883620689655,
+            "answered_accuracy": 0.8907265209686946,
+            "episodes": 3712,
+            "false_positive_rate": 0.005387931034482759,
+            "macro_f1": 0.5555376743418339,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.38260902553922016,
+            "predictions": {
+              "no": 1029,
+              "wait": 2019,
+              "yes": 664
+            }
+          }
+        }
+      ]
+    }
+  },
+  "safe_method": "safevantage_fixed_horizon",
+  "schema": "safevantage_locked_all_baseline_selective_head_v0.13",
+  "selection_split": "train_only_oof_baselines_plus_frozen_v0.12_safe_rule",
+  "source_rows_sha256": "6be49079233a89ae57bd5fb7b50b6e3a9f5fd97b0dfd0de634a6859e2b6ca3f4",
+  "strongest_baseline": "category_room_prior"
+}

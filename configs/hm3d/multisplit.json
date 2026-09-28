@@ -1,0 +1,23 @@
+{
+  "schema": "safevantage_round2_multisplit_v0_1",
+  "frozen_date": "2026-08-23",
+  "data_status": "immutable-consumed-HM3D-Sem",
+  "scene_folds": 9,
+  "calibration_scenes_per_fold": 4,
+  "costs": {
+    "false_positive": 5.0,
+    "false_negative": 2.0,
+    "abstain": 0.5,
+    "view": 0.001
+  },
+  "coverage_grid": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 20260823,
+  "methods": ["SafeVantage", "caption-RAG", "ConceptGraphs", "VLMaps"],
+  "gates": {
+    "safevantage_lower_median_risk_than_all_baselines": true,
+    "safevantage_lower_mean_matched_coverage_risk_than_all_baselines": true,
+    "paired_scene_bootstrap_lower_bound_above_zero_for_all_baselines": true,
+    "safevantage_lower_mean_calibration_selected_aurc_than_all_baselines": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "artifact_type": "result_pointer",
+  "canonical_path": "../../scannet/negative_closure/summary.json",
+  "dataset": "ScanNet",
+  "analysis": "four-state negative-closure audit",
+  "note": "The canonical result is stored under results/scannet/negative_closure/summary.json."
+}

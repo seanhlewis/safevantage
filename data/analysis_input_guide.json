@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "format": "JSON Lines; each non-empty line is one JSON object",
+  "hm3d_multisplit": {
+    "dataset": "HM3D-Sem",
+    "protocol": "protocols/hm3d/multisplit_preregistration.md",
+    "input_files": [
+      {
+        "name": "canonical score rows",
+        "schema": "schemas/hm3d_canonical_score.schema.json",
+        "contents": "Frozen SafeVantage, ConceptGraphs, and VLMaps case scores. Include one row per case and method. Use method values safevantage_full, conceptgraphs_tau1, and vlmaps_tau1."
+      },
+      {
+        "name": "caption-RAG score rows",
+        "schema": "schemas/hm3d_caption_score.schema.json",
+        "contents": "Frozen caption-RAG score for each case_id shared with the canonical score rows. scene_id and gt_present may be included and, when present, must agree with the canonical row."
+      }
+    ],
+    "construction": [
+      "Obtain HM3D-Sem through its official access process and follow its dataset terms.",
+      "Generate the per-case score streams using the corresponding frozen method implementations and the same case IDs, scene IDs, and ground-truth labels across methods.",
+      "Export canonical rows with case_id, scene_id, gt_present, method, and the method-specific score field. Export caption-RAG rows with case_id and score.",
+      "Run src/analysis/hm3d/evaluate_multisplit.py with --canonical, --caption-rows, --config configs/hm3d/multisplit.json, and --output."
+    ],
+    "scope": "The evaluator analyzes frozen score streams; it does not render HM3D scenes or generate SafeVantage, ConceptGraphs, VLMaps, or caption-RAG scores."
+  },
+  "scannet_negative_closure": {
+    "dataset": "ScanNet",
+    "protocol": "protocols/hm3d/multisplit_preregistration.md, Explicit negative-closure audit",
+    "input_file": {
+      "name": "prepared four-state episode records",
+      "schema": "schemas/scannet_negative_closure.schema.json",
+      "contents": "Frozen episode-level observability records with a disjoint six-scene development split and twelve-scene test split."
+    },
+    "construction": [
+      "Request ScanNet access through its official process and follow its terms.",
+      "Prepare the frozen four-state episode records using the registered episode construction and observability protocol; raw scans alone are not this evaluator's input.",
+      "Write one JSON object per episode with split, scene_id, epistemic_state, max_p_clear, coverage_fraction, and source_coverage_fraction.",
+      "Run src/analysis/scannet/evaluate_negative_closure.py with --episodes and --output."
+    ],
+    "scope": "The audit selects its rule on development episodes and evaluates once on the locked test episodes. It does not create episodes from raw scans."
+  }
+}

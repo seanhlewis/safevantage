@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One prepared ScanNet negative-closure episode",
+  "description": "One JSONL record from the frozen four-state episode set. Required split composition: six development scenes and twelve disjoint test scenes.",
+  "type": "object",
+  "required": ["split", "scene_id", "epistemic_state", "max_p_clear", "coverage_fraction", "source_coverage_fraction"],
+  "properties": {
+    "episode_id": {"type": ["string", "integer"], "description": "Optional source episode identifier."},
+    "split": {"enum": ["dev", "test"]},
+    "scene_id": {"type": ["string", "integer"], "description": "Stable ScanNet scene key; development and test scene sets must be disjoint."},
+    "epistemic_state": {"enum": ["observed_absent", "observed_present", "unobserved", "view_ambiguous"]},
+    "max_p_clear": {"type": "number", "minimum": 0, "maximum": 1},
+    "coverage_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+    "source_coverage_fraction": {"type": "number", "minimum": 0, "maximum": 1}
+  },
+  "additionalProperties": true
+}

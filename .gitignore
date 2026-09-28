@@ -1,0 +1,16 @@
+# Generated artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+results/generated/
+outputs/
+logs/
+*.log
+
+# Local benchmark inputs are obtained separately under their own terms.
+data/derived/
+data/raw/
+data/local_inputs/

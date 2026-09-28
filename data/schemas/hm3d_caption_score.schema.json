@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One frozen caption-RAG HM3D case score",
+  "description": "One JSONL record. Every case_id must also occur in the canonical SafeVantage rows.",
+  "type": "object",
+  "required": ["case_id", "score"],
+  "properties": {
+    "case_id": {"type": ["string", "integer"], "description": "Stable case key shared with the canonical score rows."},
+    "score": {"type": "number", "description": "Frozen caption-RAG score used to select Yes, No, or Abstain thresholds."},
+    "scene_id": {"type": ["string", "integer"], "description": "Optional scene key; if supplied, must match canonical rows."},
+    "gt_present": {"type": ["boolean", "integer"], "enum": [true, false, 0, 1], "description": "Optional binary ground truth; if supplied, must match canonical rows."}
+  },
+  "additionalProperties": true
+}

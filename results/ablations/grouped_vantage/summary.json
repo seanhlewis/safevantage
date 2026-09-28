@@ -1,0 +1,3357 @@
+{
+  "budgets": {
+    "12": {
+      "accounting": {
+        "no_vantage_train_sha256": "221c1df0859a4493dd0724c15b6907620724edc5e1fd9a9df2793eab0173bb32",
+        "no_vantage_validation_sha256": "a64d82dc6cda5800bd02d3aacad30098a224f1c52e92d96810740ee5b4b3d680",
+        "train_episodes": 3712,
+        "train_scenes": 116,
+        "validation_episodes": 3072,
+        "validation_scenes": 96
+      },
+      "contrasts": {
+        "gate_free_acquisition": {
+          "first": "full_gate_free",
+          "second": "no_vantage_acquisition_gate_free",
+          "train_frozen_validation": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  -0.0146484375,
+                  0.00846354166666663
+                ],
+                "estimate": -0.0029296875,
+                "probability_favorable": 0.2904
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.00674990381836948,
+                  0.00297929016091849
+                ],
+                "estimate": -0.0018029576835620897,
+                "probability_favorable": 0.2342
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.005208333333333334,
+                  0.002604166666666668
+                ],
+                "estimate": -0.0013020833333333322,
+                "probability_favorable": 0.6965
+              },
+              "macro_f1": {
+                "ci95": [
+                  -0.01404414616340272,
+                  0.007195790336162493
+                ],
+                "estimate": -0.003399096273422053,
+                "probability_favorable": 0.2552
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  -0.02748378290561959,
+                  3.2864122961966214e-05
+                ],
+                "estimate": -0.013537229310411014,
+                "probability_favorable": 0.9745
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.009455136722436922,
+                  0.011714353780969421
+                ],
+                "estimate": 0.0008002648540228474,
+                "probability_favorable": 0.4542
+              }
+            },
+            "first": {
+              "answer_rate": 0.5602213541666666,
+              "answered_accuracy": 0.8756536897152818,
+              "false_positive_rate": 0.011067708333333334,
+              "macro_f1": 0.6247509862279064,
+              "mean_geodesic_m": 7.200486617628485,
+              "mean_risk": 0.38301428870096177
+            },
+            "paired_episodes": 3072,
+            "scenes": 96,
+            "second": {
+              "answer_rate": 0.5631510416666666,
+              "answered_accuracy": 0.8774566473988439,
+              "false_positive_rate": 0.012369791666666666,
+              "macro_f1": 0.6281500825013284,
+              "mean_geodesic_m": 7.214023846938896,
+              "mean_risk": 0.3822140238469389
+            }
+          },
+          "train_oof": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  0.006196120689655249,
+                  0.022090517241379337
+                ],
+                "estimate": 0.014278017241379226,
+                "probability_favorable": 1.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  0.000747492418471582,
+                  0.0067009578898235105
+                ],
+                "estimate": 0.0037133238219136944,
+                "probability_favorable": 0.992
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.0037715517241379316,
+                  0.0021551724137931034
+                ],
+                "estimate": -0.0010775862068965513,
+                "probability_favorable": 0.7172
+              },
+              "macro_f1": {
+                "ci95": [
+                  0.007012590891840406,
+                  0.020307428936968117
+                ],
+                "estimate": 0.013759883755488422,
+                "probability_favorable": 1.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  -0.015307634880220133,
+                  0.000849633636193678
+                ],
+                "estimate": -0.0071233476608476565,
+                "probability_favorable": 0.9594
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.0179181832180459,
+                  -0.0025721455485927212
+                ],
+                "estimate": -0.01037889058904029,
+                "probability_favorable": 0.9955
+              }
+            },
+            "first": {
+              "answer_rate": 0.6072198275862069,
+              "answered_accuracy": 0.9023957409050577,
+              "false_positive_rate": 0.005387931034482759,
+              "macro_f1": 0.6791812095544922,
+              "mean_geodesic_m": 6.285624011772974,
+              "mean_risk": 0.3292920895290143
+            },
+            "paired_episodes": 3712,
+            "scenes": 116,
+            "second": {
+              "answer_rate": 0.5929418103448276,
+              "answered_accuracy": 0.898682417083144,
+              "false_positive_rate": 0.00646551724137931,
+              "macro_f1": 0.6654213257990038,
+              "mean_geodesic_m": 6.292747359433822,
+              "mean_risk": 0.3396709801180546
+            }
+          }
+        },
+        "gate_free_end_to_end": {
+          "first": "full_gate_free",
+          "second": "no_vantage_end_to_end_gate_free",
+          "train_frozen_validation": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  -0.14388020833333337,
+                  -0.1044921875
+                ],
+                "estimate": -0.12434895833333337,
+                "probability_favorable": 0.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  0.011051816316761923,
+                  0.03517143925857994
+                ],
+                "estimate": 0.02306215381418808,
+                "probability_favorable": 1.0
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.017578125,
+                  -0.002604166666666667
+                ],
+                "estimate": -0.009765624999999998,
+                "probability_favorable": 0.9955
+              },
+              "macro_f1": {
+                "ci95": [
+                  -0.08003480832808305,
+                  -0.049177063421711
+                ],
+                "estimate": -0.06467779855376765,
+                "probability_favorable": 0.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  -0.027604417587281493,
+                  -0.0002588817699385617
+                ],
+                "estimate": -0.013537229310411014,
+                "probability_favorable": 0.9767
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.0392340151730587,
+                  0.0077973890392709026
+                ],
+                "estimate": -0.014987495562643838,
+                "probability_favorable": 0.9023
+              }
+            },
+            "first": {
+              "answer_rate": 0.5602213541666666,
+              "answered_accuracy": 0.8756536897152818,
+              "false_positive_rate": 0.011067708333333334,
+              "macro_f1": 0.6247509862279064,
+              "mean_geodesic_m": 7.200486617628485,
+              "mean_risk": 0.38301428870096177
+            },
+            "paired_episodes": 3072,
+            "scenes": 96,
+            "second": {
+              "answer_rate": 0.6845703125,
+              "answered_accuracy": 0.8525915359010937,
+              "false_positive_rate": 0.020833333333333332,
+              "macro_f1": 0.689428784781674,
+              "mean_geodesic_m": 7.214023846938896,
+              "mean_risk": 0.3980017842636056
+            }
+          },
+          "train_oof": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  -0.10452586206896552,
+                  -0.06546336206896552
+                ],
+                "estimate": -0.08512931034482762,
+                "probability_favorable": 0.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  0.012642114232310242,
+                  0.032664699572849204
+                ],
+                "estimate": 0.022240098881711412,
+                "probability_favorable": 1.0
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.015625,
+                  -0.0037715517241379308
+                ],
+                "estimate": -0.009159482758620689,
+                "probability_favorable": 1.0
+              },
+              "macro_f1": {
+                "ci95": [
+                  -0.05239730757202108,
+                  -0.023835648771096146
+                ],
+                "estimate": -0.038080518556288134,
+                "probability_favorable": 0.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  -0.01560819747552682,
+                  0.0007801885355327441
+                ],
+                "estimate": -0.0071233476608476565,
+                "probability_favorable": 0.96
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.03651604061835566,
+                  -0.0012217677814031285
+                ],
+                "estimate": -0.018595485416626423,
+                "probability_favorable": 0.983
+              }
+            },
+            "first": {
+              "answer_rate": 0.6072198275862069,
+              "answered_accuracy": 0.9023957409050577,
+              "false_positive_rate": 0.005387931034482759,
+              "macro_f1": 0.6791812095544922,
+              "mean_geodesic_m": 6.285624011772974,
+              "mean_risk": 0.3292920895290143
+            },
+            "paired_episodes": 3712,
+            "scenes": 116,
+            "second": {
+              "answer_rate": 0.6923491379310345,
+              "answered_accuracy": 0.8801556420233463,
+              "false_positive_rate": 0.014547413793103448,
+              "macro_f1": 0.7172617281107804,
+              "mean_geodesic_m": 6.292747359433822,
+              "mean_risk": 0.3478875749456407
+            }
+          }
+        },
+        "original_contract": {
+          "first": "full_required",
+          "second": "no_vantage_acquisition_required",
+          "train_frozen_validation": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  0.0022786458333333703,
+                  0.02311197916666663
+                ],
+                "estimate": 0.0126953125,
+                "probability_favorable": 0.9914
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.004851518211481281,
+                  0.004689517944756485
+                ],
+                "estimate": -7.409602845287466e-05,
+                "probability_favorable": 0.5053
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.003255208333333334,
+                  0.005208333333333333
+                ],
+                "estimate": 0.0006510416666666678,
+                "probability_favorable": 0.3297
+              },
+              "macro_f1": {
+                "ci95": [
+                  0.001640148302663594,
+                  0.021631450571883905
+                ],
+                "estimate": 0.01148639293832665,
+                "probability_favorable": 0.9884
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  -0.027724534048077686,
+                  -0.00012977307633264446
+                ],
+                "estimate": -0.013537229310411014,
+                "probability_favorable": 0.9761
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.0123739537201389,
+                  0.008617712980536008
+                ],
+                "estimate": -0.0021294226459771526,
+                "probability_favorable": 0.6732
+              }
+            },
+            "first": {
+              "answer_rate": 0.5491536458333334,
+              "answered_accuracy": 0.8749259039715471,
+              "false_positive_rate": 0.009114583333333334,
+              "macro_f1": 0.614911062909818,
+              "mean_geodesic_m": 7.200486617628485,
+              "mean_risk": 0.38366533036762845
+            },
+            "paired_episodes": 3072,
+            "scenes": 96,
+            "second": {
+              "answer_rate": 0.5364583333333334,
+              "answered_accuracy": 0.875,
+              "false_positive_rate": 0.008463541666666666,
+              "macro_f1": 0.6034246699714914,
+              "mean_geodesic_m": 7.214023846938896,
+              "mean_risk": 0.3857947530136056
+            }
+          },
+          "train_oof": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  0.015355603448275912,
+                  0.03313577586206895
+                ],
+                "estimate": 0.024245689655172487,
+                "probability_favorable": 1.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  0.0014007736676123067,
+                  0.007628340616809273
+                ],
+                "estimate": 0.004597460290851174,
+                "probability_favorable": 0.9967
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.003232758620689655,
+                  0.0037715517241379308
+                ],
+                "estimate": 0.0,
+                "probability_favorable": 0.4476
+              },
+              "macro_f1": {
+                "ci95": [
+                  0.015437868470310992,
+                  0.030174777983297166
+                ],
+                "estimate": 0.022894352461647838,
+                "probability_favorable": 1.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  -0.0155917454563111,
+                  0.000805108556282413
+                ],
+                "estimate": -0.0071233476608476565,
+                "probability_favorable": 0.959
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.020342558725815654,
+                  -0.004319828914460805
+                ],
+                "estimate": -0.012668761278695428,
+                "probability_favorable": 0.9984
+              }
+            },
+            "first": {
+              "answer_rate": 0.6007543103448276,
+              "answered_accuracy": 0.9017937219730942,
+              "false_positive_rate": 0.004849137931034483,
+              "macro_f1": 0.6735867263317525,
+              "mean_geodesic_m": 6.285624011772974,
+              "mean_risk": 0.3311778653910833
+            },
+            "paired_episodes": 3712,
+            "scenes": 116,
+            "second": {
+              "answer_rate": 0.5765086206896551,
+              "answered_accuracy": 0.897196261682243,
+              "false_positive_rate": 0.004849137931034483,
+              "macro_f1": 0.6506923738701047,
+              "mean_geodesic_m": 6.292747359433822,
+              "mean_risk": 0.3438466266697787
+            }
+          }
+        },
+        "pair_gate_control": {
+          "first": "full_required",
+          "second": "full_gate_free",
+          "train_frozen_validation": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  -0.0166015625,
+                  -0.00651041666666663
+                ],
+                "estimate": -0.01106770833333326,
+                "probability_favorable": 0.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.0023264441923355277,
+                  0.0010804714584803944
+                ],
+                "estimate": -0.0007277857437346658,
+                "probability_favorable": 0.1997
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.004557291666666666,
+                  0.0
+                ],
+                "estimate": -0.001953125,
+                "probability_favorable": 0.9554
+              },
+              "macro_f1": {
+                "ci95": [
+                  -0.014534808621835088,
+                  -0.005690679771340576
+                ],
+                "estimate": -0.009839923318088362,
+                "probability_favorable": 0.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "estimate": 0.0,
+                "probability_favorable": 0.0
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.00439453125,
+                  0.004720052083333315
+                ],
+                "estimate": 0.0006510416666666852,
+                "probability_favorable": 0.356
+              }
+            },
+            "first": {
+              "answer_rate": 0.5491536458333334,
+              "answered_accuracy": 0.8749259039715471,
+              "false_positive_rate": 0.009114583333333334,
+              "macro_f1": 0.614911062909818,
+              "mean_geodesic_m": 7.200486617628485,
+              "mean_risk": 0.38366533036762845
+            },
+            "paired_episodes": 3072,
+            "scenes": 96,
+            "second": {
+              "answer_rate": 0.5602213541666666,
+              "answered_accuracy": 0.8756536897152818,
+              "false_positive_rate": 0.011067708333333334,
+              "macro_f1": 0.6247509862279064,
+              "mean_geodesic_m": 7.200486617628485,
+              "mean_risk": 0.38301428870096177
+            }
+          },
+          "train_oof": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  -0.009159482758620774,
+                  -0.0037715517241379004
+                ],
+                "estimate": -0.006465517241379226,
+                "probability_favorable": 0.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.0013710241818402857,
+                  0.00043665457741507146
+                ],
+                "estimate": -0.0006020189319635438,
+                "probability_favorable": 0.1043
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.0016163793103448282,
+                  0.0
+                ],
+                "estimate": -0.0005387931034482761,
+                "probability_favorable": 0.6317
+              },
+              "macro_f1": {
+                "ci95": [
+                  -0.008202955560858188,
+                  -0.0031564200507052443
+                ],
+                "estimate": -0.005594483222739699,
+                "probability_favorable": 0.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "estimate": 0.0,
+                "probability_favorable": 0.0
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.0013469827586206629,
+                  0.004175646551724144
+                ],
+                "estimate": 0.0018857758620690057,
+                "probability_favorable": 0.0939
+              }
+            },
+            "first": {
+              "answer_rate": 0.6007543103448276,
+              "answered_accuracy": 0.9017937219730942,
+              "false_positive_rate": 0.004849137931034483,
+              "macro_f1": 0.6735867263317525,
+              "mean_geodesic_m": 6.285624011772974,
+              "mean_risk": 0.3311778653910833
+            },
+            "paired_episodes": 3712,
+            "scenes": 116,
+            "second": {
+              "answer_rate": 0.6072198275862069,
+              "answered_accuracy": 0.9023957409050577,
+              "false_positive_rate": 0.005387931034482759,
+              "macro_f1": 0.6791812095544922,
+              "mean_geodesic_m": 6.285624011772974,
+              "mean_risk": 0.3292920895290143
+            }
+          }
+        }
+      },
+      "models": {
+        "full_gate_free": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.3360117895620985,
+            0.1377287280841715,
+            0.06457835518038428,
+            0.20027404197456145,
+            0.21170389448193655,
+            0.2153963107744162,
+            0.18204370228223574,
+            0.17478572065464473,
+            0.1517499889615588,
+            -0.011576671198678647,
+            0.11681312187497828,
+            0.0065891698643567136,
+            0.19204143099815216,
+            -0.13738262316277075,
+            -0.06595504254991089,
+            0.013160533958676562,
+            -0.01623908201374301,
+            0.08236832166206705,
+            -0.18678211864320152,
+            0.13808967635943573,
+            -0.06395305907579205,
+            0.05062859231097185,
+            0.12203251490607214,
+            -0.11808136248493473,
+            0.056058947114110934,
+            -0.003279244346315493,
+            -0.10132383251523874,
+            0.13174347424670418,
+            0.07830307419253164,
+            0.08366042039813591,
+            -0.047371533409658176,
+            -0.14894541076530862,
+            0.04271189235036067,
+            -0.028417880423753563,
+            -0.05144540511067371,
+            0.13738292898776716,
+            -0.20585022187690635,
+            0.10942513938728501,
+            -0.014660945488487573
+          ],
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "full",
+          "folds": 5,
+          "intercept": 0.37576676939832765,
+          "l2": 0.1,
+          "mean": [
+            0.2741150562357908,
+            0.20251307714101258,
+            0.14115206818728596,
+            0.20592673385469634,
+            1.0546875,
+            0.9692887931034483,
+            0.8375538793103449,
+            0.7548491379310345,
+            0.6255387931034483,
+            0.10107085129310756,
+            2.150592672413793,
+            12.998653017241379,
+            0.12120772546419101,
+            3.3633571047426694,
+            0.9380472111917133,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.6072198275862069,
+            "answered_accuracy": 0.9023957409050577,
+            "episodes": 3712,
+            "false_positive_rate": 0.005387931034482759,
+            "macro_f1": 0.6791812095544922,
+            "mean_geodesic_m": 6.285624011772974,
+            "mean_risk": 0.3292920895290143,
+            "predictions": {
+              "no": 1357,
+              "wait": 1458,
+              "yes": 897
+            }
+          },
+          "pair_gate_mode": "disabled",
+          "std": [
+            0.3804252158937502,
+            0.34676949506394544,
+            0.29977962804854963,
+            0.3244666698597562,
+            1.4543982822977501,
+            1.4371250375298006,
+            1.3831113598459326,
+            1.3284552292818235,
+            1.2229287250688918,
+            0.006252550473355029,
+            1.1433864713548836,
+            0.03667653740565783,
+            0.15247612053264487,
+            2.2466795879457373,
+            0.07204566615837245,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        },
+        "full_required": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.3360117895620985,
+            0.1377287280841715,
+            0.06457835518038428,
+            0.20027404197456145,
+            0.21170389448193655,
+            0.2153963107744162,
+            0.18204370228223574,
+            0.17478572065464473,
+            0.1517499889615588,
+            -0.011576671198678647,
+            0.11681312187497828,
+            0.0065891698643567136,
+            0.19204143099815216,
+            -0.13738262316277075,
+            -0.06595504254991089,
+            0.013160533958676562,
+            -0.01623908201374301,
+            0.08236832166206705,
+            -0.18678211864320152,
+            0.13808967635943573,
+            -0.06395305907579205,
+            0.05062859231097185,
+            0.12203251490607214,
+            -0.11808136248493473,
+            0.056058947114110934,
+            -0.003279244346315493,
+            -0.10132383251523874,
+            0.13174347424670418,
+            0.07830307419253164,
+            0.08366042039813591,
+            -0.047371533409658176,
+            -0.14894541076530862,
+            0.04271189235036067,
+            -0.028417880423753563,
+            -0.05144540511067371,
+            0.13738292898776716,
+            -0.20585022187690635,
+            0.10942513938728501,
+            -0.014660945488487573
+          ],
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "full",
+          "folds": 5,
+          "intercept": 0.37576676939832765,
+          "l2": 0.1,
+          "mean": [
+            0.2741150562357908,
+            0.20251307714101258,
+            0.14115206818728596,
+            0.20592673385469634,
+            1.0546875,
+            0.9692887931034483,
+            0.8375538793103449,
+            0.7548491379310345,
+            0.6255387931034483,
+            0.10107085129310756,
+            2.150592672413793,
+            12.998653017241379,
+            0.12120772546419101,
+            3.3633571047426694,
+            0.9380472111917133,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.6007543103448276,
+            "answered_accuracy": 0.9017937219730942,
+            "episodes": 3712,
+            "false_positive_rate": 0.004849137931034483,
+            "macro_f1": 0.6735867263317525,
+            "mean_geodesic_m": 6.285624011772974,
+            "mean_risk": 0.3311778653910833,
+            "predictions": {
+              "no": 1357,
+              "wait": 1482,
+              "yes": 873
+            }
+          },
+          "pair_gate_mode": "required",
+          "std": [
+            0.3804252158937502,
+            0.34676949506394544,
+            0.29977962804854963,
+            0.3244666698597562,
+            1.4543982822977501,
+            1.4371250375298006,
+            1.3831113598459326,
+            1.3284552292818235,
+            1.2229287250688918,
+            0.006252550473355029,
+            1.1433864713548836,
+            0.03667653740565783,
+            0.15247612053264487,
+            2.2466795879457373,
+            0.07204566615837245,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        },
+        "no_vantage_acquisition_gate_free": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.35416432457496416,
+            0.11928998633773635,
+            0.04316153881374871,
+            0.20207425195390777,
+            0.22711286863005353,
+            0.23443179100747435,
+            0.1907310771627598,
+            0.17973327857976856,
+            0.1597409198586251,
+            -0.013891369879405407,
+            0.10991562703278802,
+            0.007216293999309314,
+            0.18498082963712892,
+            -0.11535723445217391,
+            -0.0575133050827941,
+            0.010652295151995917,
+            -0.02271481417169684,
+            0.07887173148860559,
+            -0.18180187330007253,
+            0.13913274442113766,
+            -0.059873095689195154,
+            0.05785711169238651,
+            0.12014421066356146,
+            -0.11887536102722886,
+            0.05583601541969304,
+            -0.005335199686935006,
+            -0.09906741476873024,
+            0.13720056733692962,
+            0.07479654552150343,
+            0.07750615909035648,
+            -0.04135546171643566,
+            -0.14786405133215164,
+            0.04023366224974553,
+            -0.032528044555317825,
+            -0.056299169004975995,
+            0.140264025483905,
+            -0.20611279271891417,
+            0.11169334700246086,
+            -0.013739663602479498
+          ],
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "full",
+          "folds": 5,
+          "intercept": 0.3738701220151541,
+          "l2": 0.1,
+          "mean": [
+            0.2693188256021601,
+            0.1818454902326078,
+            0.11320327333468695,
+            0.18812252972315144,
+            0.9092133620689655,
+            0.8251616379310345,
+            0.7071659482758621,
+            0.6360452586206896,
+            0.5269396551724138,
+            0.10107758620690063,
+            2.150323275862069,
+            12.998653017241379,
+            0.11076342838196279,
+            3.4732015652031425,
+            0.9382566959789858,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.5929418103448276,
+            "answered_accuracy": 0.898682417083144,
+            "episodes": 3712,
+            "false_positive_rate": 0.00646551724137931,
+            "macro_f1": 0.6654213257990038,
+            "mean_geodesic_m": 6.292747359433822,
+            "mean_risk": 0.3396709801180546,
+            "predictions": {
+              "no": 1346,
+              "wait": 1511,
+              "yes": 855
+            }
+          },
+          "pair_gate_mode": "disabled",
+          "std": [
+            0.3759548893889722,
+            0.3330922271831376,
+            0.2746252801689106,
+            0.30473555240867295,
+            1.2521968737028402,
+            1.2290847080501743,
+            1.1838862192879285,
+            1.1373007054000062,
+            1.0480516141935305,
+            0.0062648456266159456,
+            1.1433041117937126,
+            0.03667653740565783,
+            0.1408342512901618,
+            2.1882249312185134,
+            0.07160292236159557,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        },
+        "no_vantage_acquisition_required": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.35416432457496416,
+            0.11928998633773635,
+            0.04316153881374871,
+            0.20207425195390777,
+            0.22711286863005353,
+            0.23443179100747435,
+            0.1907310771627598,
+            0.17973327857976856,
+            0.1597409198586251,
+            -0.013891369879405407,
+            0.10991562703278802,
+            0.007216293999309314,
+            0.18498082963712892,
+            -0.11535723445217391,
+            -0.0575133050827941,
+            0.010652295151995917,
+            -0.02271481417169684,
+            0.07887173148860559,
+            -0.18180187330007253,
+            0.13913274442113766,
+            -0.059873095689195154,
+            0.05785711169238651,
+            0.12014421066356146,
+            -0.11887536102722886,
+            0.05583601541969304,
+            -0.005335199686935006,
+            -0.09906741476873024,
+            0.13720056733692962,
+            0.07479654552150343,
+            0.07750615909035648,
+            -0.04135546171643566,
+            -0.14786405133215164,
+            0.04023366224974553,
+            -0.032528044555317825,
+            -0.056299169004975995,
+            0.140264025483905,
+            -0.20611279271891417,
+            0.11169334700246086,
+            -0.013739663602479498
+          ],
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "full",
+          "folds": 5,
+          "intercept": 0.3738701220151541,
+          "l2": 0.1,
+          "mean": [
+            0.2693188256021601,
+            0.1818454902326078,
+            0.11320327333468695,
+            0.18812252972315144,
+            0.9092133620689655,
+            0.8251616379310345,
+            0.7071659482758621,
+            0.6360452586206896,
+            0.5269396551724138,
+            0.10107758620690063,
+            2.150323275862069,
+            12.998653017241379,
+            0.11076342838196279,
+            3.4732015652031425,
+            0.9382566959789858,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.5765086206896551,
+            "answered_accuracy": 0.897196261682243,
+            "episodes": 3712,
+            "false_positive_rate": 0.004849137931034483,
+            "macro_f1": 0.6506923738701047,
+            "mean_geodesic_m": 6.292747359433822,
+            "mean_risk": 0.3438466266697787,
+            "predictions": {
+              "no": 1346,
+              "wait": 1572,
+              "yes": 794
+            }
+          },
+          "pair_gate_mode": "required",
+          "std": [
+            0.3759548893889722,
+            0.3330922271831376,
+            0.2746252801689106,
+            0.30473555240867295,
+            1.2521968737028402,
+            1.2290847080501743,
+            1.1838862192879285,
+            1.1373007054000062,
+            1.0480516141935305,
+            0.0062648456266159456,
+            1.1433041117937126,
+            0.03667653740565783,
+            0.1408342512901618,
+            2.1882249312185134,
+            0.07160292236159557,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        },
+        "no_vantage_end_to_end_gate_free": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.9077984069247846,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.018520626141538255,
+            0.0013873116463421356,
+            0.01359027629795166,
+            0.0,
+            0.0,
+            -0.05565718121870965,
+            -0.001583543725348661,
+            -0.032961952042957404,
+            0.11902770322897925,
+            -0.19577818321970306,
+            0.11272185461990003,
+            0.0028846943782887893,
+            0.09465163770373351,
+            0.08356486152081376,
+            -0.14882154369124626,
+            0.0713074700024707,
+            -0.03166649611138386,
+            -0.1091275277942636,
+            0.1551616375143816,
+            0.0756096218384844,
+            0.09917815200544873,
+            -0.0391137013986236,
+            -0.133843355064805,
+            0.055906666516640245,
+            -0.06353914571940973,
+            -0.06049469938919975,
+            0.16916176475525896,
+            -0.232132724951462,
+            0.0797922356259172,
+            -0.019574935217268087
+          ],
+          "decision": {
+            "no_probability": 0.4,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "no_vantage",
+          "folds": 5,
+          "intercept": 0.07032082970511032,
+          "l2": 0.1,
+          "mean": [
+            0.2693188256021601,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.10107758620690063,
+            2.150323275862069,
+            12.998653017241379,
+            0.0,
+            0.0,
+            0.9382566959789858,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.6923491379310345,
+            "answered_accuracy": 0.8801556420233463,
+            "episodes": 3712,
+            "false_positive_rate": 0.014547413793103448,
+            "macro_f1": 0.7172617281107804,
+            "mean_geodesic_m": 6.292747359433822,
+            "mean_risk": 0.3478875749456407,
+            "predictions": {
+              "no": 1563,
+              "wait": 1142,
+              "yes": 1007
+            }
+          },
+          "pair_gate_mode": "disabled",
+          "std": [
+            0.3759548893889722,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0062648456266159456,
+            1.1433041117937126,
+            0.03667653740565783,
+            1.0,
+            1.0,
+            0.07160292236159557,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        }
+      }
+    },
+    "8": {
+      "accounting": {
+        "no_vantage_train_sha256": "5100226f159af9f544affc63a41ebaa3b3f26dd6515c8cf36db79e602d322eb8",
+        "no_vantage_validation_sha256": "606c989cd4ba6e721fdb6f91bd532dcae6c78dac0ed2056ae4eaf460193eaa7a",
+        "train_episodes": 3712,
+        "train_scenes": 116,
+        "validation_episodes": 3072,
+        "validation_scenes": 96
+      },
+      "contrasts": {
+        "gate_free_acquisition": {
+          "first": "full_gate_free",
+          "second": "no_vantage_acquisition_gate_free",
+          "train_frozen_validation": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  0.01171875,
+                  0.02571614583333337
+                ],
+                "estimate": 0.01888020833333337,
+                "probability_favorable": 1.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.0009403497987129693,
+                  0.010618559375631163
+                ],
+                "estimate": 0.004845328591249198,
+                "probability_favorable": 0.9488
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.001302083333333334,
+                  0.008463541666666666
+                ],
+                "estimate": 0.003255208333333334,
+                "probability_favorable": 0.0671
+              },
+              "macro_f1": {
+                "ci95": [
+                  0.01286251757156058,
+                  0.027003097910877794
+                ],
+                "estimate": 0.019969050398634614,
+                "probability_favorable": 1.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  -0.0004665837603776479,
+                  0.021570888384303398
+                ],
+                "estimate": 0.010468916618265212,
+                "probability_favorable": 0.0294
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.015617012583512708,
+                  0.007326843524893083
+                ],
+                "estimate": -0.004546822750048418,
+                "probability_favorable": 0.7831
+              }
+            },
+            "first": {
+              "answer_rate": 0.4752604166666667,
+              "answered_accuracy": 0.8828767123287671,
+              "false_positive_rate": 0.01171875,
+              "macro_f1": 0.5683621933621934,
+              "mean_geodesic_m": 3.3204236965781697,
+              "mean_risk": 0.39459646536324483
+            },
+            "paired_episodes": 3072,
+            "scenes": 96,
+            "second": {
+              "answer_rate": 0.4563802083333333,
+              "answered_accuracy": 0.8780313837375179,
+              "false_positive_rate": 0.008463541666666666,
+              "macro_f1": 0.5483931429635588,
+              "mean_geodesic_m": 3.3099547799599045,
+              "mean_risk": 0.39914328811329325
+            }
+          },
+          "train_oof": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  0.015086206896551713,
+                  0.028556034482758563
+                ],
+                "estimate": 0.021821120689655193,
+                "probability_favorable": 1.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.005039337668506777,
+                  0.004303876029952133
+                ],
+                "estimate": -0.0002790029797518079,
+                "probability_favorable": 0.4606
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  0.0005387931034482761,
+                  0.0075431034482758615
+                ],
+                "estimate": 0.0037715517241379316,
+                "probability_favorable": 0.0049
+              },
+              "macro_f1": {
+                "ci95": [
+                  0.012306449341978035,
+                  0.025196803264145105
+                ],
+                "estimate": 0.01869249590099309,
+                "probability_favorable": 1.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  0.003005128354235731,
+                  0.01908780578844993
+                ],
+                "estimate": 0.01130010629201239,
+                "probability_favorable": 0.0042
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.008881868596182252,
+                  0.009307218667019482
+                ],
+                "estimate": -0.00039279472129416515,
+                "probability_favorable": 0.5544
+              }
+            },
+            "first": {
+              "answer_rate": 0.4948814655172414,
+              "answered_accuracy": 0.8949373979314099,
+              "false_positive_rate": 0.009698275862068966,
+              "macro_f1": 0.5925604113645708,
+              "mean_geodesic_m": 2.8945858840477365,
+              "mean_risk": 0.3739883358840478
+            },
+            "paired_episodes": 3712,
+            "scenes": 116,
+            "second": {
+              "answer_rate": 0.4730603448275862,
+              "answered_accuracy": 0.8952164009111617,
+              "false_positive_rate": 0.005926724137931034,
+              "macro_f1": 0.5738679154635777,
+              "mean_geodesic_m": 2.883285777755724,
+              "mean_risk": 0.37438113060534195
+            }
+          }
+        },
+        "gate_free_end_to_end": {
+          "first": "full_gate_free",
+          "second": "no_vantage_end_to_end_gate_free",
+          "train_frozen_validation": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  0.030598958333333315,
+                  0.062174479166666685
+                ],
+                "estimate": 0.04622395833333337,
+                "probability_favorable": 1.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.03213305352503043,
+                  -0.002795437555347271
+                ],
+                "estimate": -0.016971542602947642,
+                "probability_favorable": 0.0101
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.016276041666666664,
+                  -0.0013020833333333322
+                ],
+                "estimate": -0.008463541666666668,
+                "probability_favorable": 0.9846
+              },
+              "macro_f1": {
+                "ci95": [
+                  0.013437051312978641,
+                  0.042974515272116154
+                ],
+                "estimate": 0.02799001888099173,
+                "probability_favorable": 0.9999
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  -0.0003277146713423051,
+                  0.022114124725825288
+                ],
+                "estimate": 0.010468916618265212,
+                "probability_favorable": 0.0286
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.03139199329756596,
+                  0.0104171003125044
+                ],
+                "estimate": -0.010406197750048418,
+                "probability_favorable": 0.8306
+              }
+            },
+            "first": {
+              "answer_rate": 0.4752604166666667,
+              "answered_accuracy": 0.8828767123287671,
+              "false_positive_rate": 0.01171875,
+              "macro_f1": 0.5683621933621934,
+              "mean_geodesic_m": 3.3204236965781697,
+              "mean_risk": 0.39459646536324483
+            },
+            "paired_episodes": 3072,
+            "scenes": 96,
+            "second": {
+              "answer_rate": 0.4290364583333333,
+              "answered_accuracy": 0.8998482549317147,
+              "false_positive_rate": 0.020182291666666668,
+              "macro_f1": 0.5403721744812017,
+              "mean_geodesic_m": 3.3099547799599045,
+              "mean_risk": 0.40500266311329325
+            }
+          },
+          "train_oof": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  0.0625,
+                  0.09644396551724138
+                ],
+                "estimate": 0.07920258620689657,
+                "probability_favorable": 1.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.03582069045754822,
+                  -0.005062525774164624
+                ],
+                "estimate": -0.020163055730288093,
+                "probability_favorable": 0.0036
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.005926724137931035,
+                  0.004310344827586206
+                ],
+                "estimate": -0.0010775862068965521,
+                "probability_favorable": 0.6229
+              },
+              "macro_f1": {
+                "ci95": [
+                  0.03933018345452603,
+                  0.07273152838293899
+                ],
+                "estimate": 0.05566558191661919,
+                "probability_favorable": 1.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  0.0034499902647503245,
+                  0.019141251206847714
+                ],
+                "estimate": 0.01130010629201239,
+                "probability_favorable": 0.0029
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.025986230461391337,
+                  0.010517811022009481
+                ],
+                "estimate": -0.007801199893707977,
+                "probability_favorable": 0.7952
+              }
+            },
+            "first": {
+              "answer_rate": 0.4948814655172414,
+              "answered_accuracy": 0.8949373979314099,
+              "false_positive_rate": 0.009698275862068966,
+              "macro_f1": 0.5925604113645708,
+              "mean_geodesic_m": 2.8945858840477365,
+              "mean_risk": 0.3739883358840478
+            },
+            "paired_episodes": 3712,
+            "scenes": 116,
+            "second": {
+              "answer_rate": 0.4156788793103448,
+              "answered_accuracy": 0.915100453661698,
+              "false_positive_rate": 0.010775862068965518,
+              "macro_f1": 0.5368948294479516,
+              "mean_geodesic_m": 2.883285777755724,
+              "mean_risk": 0.38178953577775576
+            }
+          }
+        },
+        "original_contract": {
+          "first": "full_required",
+          "second": "no_vantage_acquisition_required",
+          "train_frozen_validation": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  0.0283203125,
+                  0.04622395833333337
+                ],
+                "estimate": 0.037109375,
+                "probability_favorable": 1.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  0.001842243677186853,
+                  0.015956791343459037
+                ],
+                "estimate": 0.008923745013423412,
+                "probability_favorable": 0.993
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  0.0013020833333333333,
+                  0.009765625
+                ],
+                "estimate": 0.005208333333333334,
+                "probability_favorable": 0.0018
+              },
+              "macro_f1": {
+                "ci95": [
+                  0.032306430450892654,
+                  0.054982682501940355
+                ],
+                "estimate": 0.04352256034289098,
+                "probability_favorable": 1.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  -0.00041412255086455943,
+                  0.021720140830438897
+                ],
+                "estimate": 0.010468916618265212,
+                "probability_favorable": 0.0317
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.01968480756989575,
+                  0.0034358107843516696
+                ],
+                "estimate": -0.008778593583381733,
+                "probability_favorable": 0.92
+              }
+            },
+            "first": {
+              "answer_rate": 0.4378255208333333,
+              "answered_accuracy": 0.8773234200743495,
+              "false_positive_rate": 0.0078125,
+              "macro_f1": 0.530689674797955,
+              "mean_geodesic_m": 3.3204236965781697,
+              "mean_risk": 0.4035482882799115
+            },
+            "paired_episodes": 3072,
+            "scenes": 96,
+            "second": {
+              "answer_rate": 0.4007161458333333,
+              "answered_accuracy": 0.8683996750609261,
+              "false_positive_rate": 0.0026041666666666665,
+              "macro_f1": 0.48716711445506405,
+              "mean_geodesic_m": 3.3099547799599045,
+              "mean_risk": 0.41232688186329325
+            }
+          },
+          "train_oof": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  0.031519396551724144,
+                  0.05010775862068967
+                ],
+                "estimate": 0.040948275862069006,
+                "probability_favorable": 1.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.003617841342511652,
+                  0.00935010765753294
+                ],
+                "estimate": 0.0033653381924374504,
+                "probability_favorable": 0.8422
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  0.0005387931034482761,
+                  0.010237068965517243
+                ],
+                "estimate": 0.004849137931034483,
+                "probability_favorable": 0.0039
+              },
+              "macro_f1": {
+                "ci95": [
+                  0.031714585703445784,
+                  0.050397881637017264
+                ],
+                "estimate": 0.041047142377820256,
+                "probability_favorable": 1.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  0.003085845928831943,
+                  0.0193017611376427
+                ],
+                "estimate": 0.01130010629201239,
+                "probability_favorable": 0.0041
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.018436701680509093,
+                  0.00687936760444687
+                ],
+                "estimate": -0.00726240679025969,
+                "probability_favorable": 0.8596
+              }
+            },
+            "first": {
+              "answer_rate": 0.4722521551724138,
+              "answered_accuracy": 0.8921848260125499,
+              "false_positive_rate": 0.007543103448275862,
+              "macro_f1": 0.5712076632676366,
+              "mean_geodesic_m": 2.8945858840477365,
+              "mean_risk": 0.37991506002197883
+            },
+            "paired_episodes": 3712,
+            "scenes": 116,
+            "second": {
+              "answer_rate": 0.4313038793103448,
+              "answered_accuracy": 0.8888194878201124,
+              "false_positive_rate": 0.0026939655172413795,
+              "macro_f1": 0.5301605208898164,
+              "mean_geodesic_m": 2.883285777755724,
+              "mean_risk": 0.3871774668122385
+            }
+          }
+        },
+        "pair_gate_control": {
+          "first": "full_required",
+          "second": "full_gate_free",
+          "train_frozen_validation": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  -0.04524739583333337,
+                  -0.0302734375
+                ],
+                "estimate": -0.03743489583333337,
+                "probability_favorable": 0.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.00972434781777538,
+                  -0.0009803459022691946
+                ],
+                "estimate": -0.0055532922544175856,
+                "probability_favorable": 0.0105
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.0078125,
+                  -0.000651041666666667
+                ],
+                "estimate": -0.00390625,
+                "probability_favorable": 0.9936
+              },
+              "macro_f1": {
+                "ci95": [
+                  -0.04620447042218682,
+                  -0.029942051888069546
+                ],
+                "estimate": -0.037672518564238366,
+                "probability_favorable": 0.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "estimate": 0.0,
+                "probability_favorable": 0.0
+              },
+              "mean_risk": {
+                "ci95": [
+                  -0.0003295898437501379,
+                  0.01676432291666674
+                ],
+                "estimate": 0.008951822916666685,
+                "probability_favorable": 0.0291
+              }
+            },
+            "first": {
+              "answer_rate": 0.4378255208333333,
+              "answered_accuracy": 0.8773234200743495,
+              "false_positive_rate": 0.0078125,
+              "macro_f1": 0.530689674797955,
+              "mean_geodesic_m": 3.3204236965781697,
+              "mean_risk": 0.4035482882799115
+            },
+            "paired_episodes": 3072,
+            "scenes": 96,
+            "second": {
+              "answer_rate": 0.4752604166666667,
+              "answered_accuracy": 0.8828767123287671,
+              "false_positive_rate": 0.01171875,
+              "macro_f1": 0.5683621933621934,
+              "mean_geodesic_m": 3.3204236965781697,
+              "mean_risk": 0.39459646536324483
+            }
+          },
+          "train_oof": {
+            "delta_first_minus_second": {
+              "answer_rate": {
+                "ci95": [
+                  -0.02855603448275862,
+                  -0.017241379310344807
+                ],
+                "estimate": -0.02262931034482757,
+                "probability_favorable": 0.0
+              },
+              "answered_accuracy": {
+                "ci95": [
+                  -0.005142991625427295,
+                  -0.0002949331597506478
+                ],
+                "estimate": -0.002752571918860025,
+                "probability_favorable": 0.0144
+              },
+              "false_positive_rate": {
+                "ci95": [
+                  -0.004310344827586207,
+                  -0.0005387931034482752
+                ],
+                "estimate": -0.0021551724137931034,
+                "probability_favorable": 0.9821
+              },
+              "macro_f1": {
+                "ci95": [
+                  -0.02763587097992252,
+                  -0.015878280652567092
+                ],
+                "estimate": -0.021352748096934215,
+                "probability_favorable": 0.0
+              },
+              "mean_geodesic_m": {
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "estimate": 0.0,
+                "probability_favorable": 0.0
+              },
+              "mean_risk": {
+                "ci95": [
+                  0.0002660290948275429,
+                  0.01104525862068978
+                ],
+                "estimate": 0.00592672413793105,
+                "probability_favorable": 0.0206
+              }
+            },
+            "first": {
+              "answer_rate": 0.4722521551724138,
+              "answered_accuracy": 0.8921848260125499,
+              "false_positive_rate": 0.007543103448275862,
+              "macro_f1": 0.5712076632676366,
+              "mean_geodesic_m": 2.8945858840477365,
+              "mean_risk": 0.37991506002197883
+            },
+            "paired_episodes": 3712,
+            "scenes": 116,
+            "second": {
+              "answer_rate": 0.4948814655172414,
+              "answered_accuracy": 0.8949373979314099,
+              "false_positive_rate": 0.009698275862068966,
+              "macro_f1": 0.5925604113645708,
+              "mean_geodesic_m": 2.8945858840477365,
+              "mean_risk": 0.3739883358840478
+            }
+          }
+        }
+      },
+      "models": {
+        "full_gate_free": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.24377693355645816,
+            0.1206714654042563,
+            0.04519122760257948,
+            0.15786931482099065,
+            0.17724568455313044,
+            0.163101761331435,
+            0.1566229016928194,
+            0.15546262834412258,
+            0.13008742314985677,
+            -0.024723245580020037,
+            0.07385270438922582,
+            0.0,
+            0.17432558730961223,
+            -0.14256927211546871,
+            -0.07896012050690121,
+            -0.0016044991626480048,
+            0.006588206327351733,
+            0.08474952083814438,
+            -0.2063337554362337,
+            0.12170588902558954,
+            -0.027125110810149455,
+            0.08657882709000886,
+            0.09091581995717357,
+            -0.14777804878982082,
+            0.06679929565797421,
+            -0.01349720416556102,
+            -0.10433034599880066,
+            0.15136513684919425,
+            0.08335286244763353,
+            0.09208286161975135,
+            -0.0423704659403986,
+            -0.1376866751725888,
+            0.06172583724007271,
+            -0.05677618001905413,
+            -0.056258650187936,
+            0.15813849561515053,
+            -0.2298448895421003,
+            0.0914041750476,
+            -0.01475511475258541
+          ],
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "full",
+          "folds": 5,
+          "intercept": 0.30060549227986344,
+          "l2": 0.1,
+          "mean": [
+            0.21579370865521044,
+            0.15647454473520186,
+            0.09156006830292834,
+            0.15460944056444703,
+            0.7098599137931034,
+            0.6462823275862069,
+            0.5619612068965517,
+            0.5048491379310345,
+            0.41783405172413796,
+            0.07580818965516736,
+            1.3515625,
+            9.0,
+            0.11619971264367704,
+            3.753709332482116,
+            0.9050124036549623,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.4948814655172414,
+            "answered_accuracy": 0.8949373979314099,
+            "episodes": 3712,
+            "false_positive_rate": 0.009698275862068966,
+            "macro_f1": 0.5925604113645708,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3739883358840478,
+            "predictions": {
+              "no": 1029,
+              "wait": 1875,
+              "yes": 808
+            }
+          },
+          "pair_gate_mode": "disabled",
+          "std": [
+            0.35518777924380546,
+            0.3146054572649779,
+            0.24923177651806364,
+            0.2867637267055294,
+            1.1200224086566881,
+            1.0991484625403745,
+            1.0529808010883193,
+            1.0080378360780187,
+            0.9283228100733707,
+            0.007432806600741717,
+            0.5566532675893388,
+            1.0,
+            0.1644591032477088,
+            2.0739430845201205,
+            0.15005832579588554,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        },
+        "full_required": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.24377693355645816,
+            0.1206714654042563,
+            0.04519122760257948,
+            0.15786931482099065,
+            0.17724568455313044,
+            0.163101761331435,
+            0.1566229016928194,
+            0.15546262834412258,
+            0.13008742314985677,
+            -0.024723245580020037,
+            0.07385270438922582,
+            0.0,
+            0.17432558730961223,
+            -0.14256927211546871,
+            -0.07896012050690121,
+            -0.0016044991626480048,
+            0.006588206327351733,
+            0.08474952083814438,
+            -0.2063337554362337,
+            0.12170588902558954,
+            -0.027125110810149455,
+            0.08657882709000886,
+            0.09091581995717357,
+            -0.14777804878982082,
+            0.06679929565797421,
+            -0.01349720416556102,
+            -0.10433034599880066,
+            0.15136513684919425,
+            0.08335286244763353,
+            0.09208286161975135,
+            -0.0423704659403986,
+            -0.1376866751725888,
+            0.06172583724007271,
+            -0.05677618001905413,
+            -0.056258650187936,
+            0.15813849561515053,
+            -0.2298448895421003,
+            0.0914041750476,
+            -0.01475511475258541
+          ],
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.8
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "full",
+          "folds": 5,
+          "intercept": 0.30060549227986344,
+          "l2": 0.1,
+          "mean": [
+            0.21579370865521044,
+            0.15647454473520186,
+            0.09156006830292834,
+            0.15460944056444703,
+            0.7098599137931034,
+            0.6462823275862069,
+            0.5619612068965517,
+            0.5048491379310345,
+            0.41783405172413796,
+            0.07580818965516736,
+            1.3515625,
+            9.0,
+            0.11619971264367704,
+            3.753709332482116,
+            0.9050124036549623,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.4722521551724138,
+            "answered_accuracy": 0.8921848260125499,
+            "episodes": 3712,
+            "false_positive_rate": 0.007543103448275862,
+            "macro_f1": 0.5712076632676366,
+            "mean_geodesic_m": 2.8945858840477365,
+            "mean_risk": 0.3799150600219788,
+            "predictions": {
+              "no": 1029,
+              "wait": 1959,
+              "yes": 724
+            }
+          },
+          "pair_gate_mode": "required",
+          "std": [
+            0.35518777924380546,
+            0.3146054572649779,
+            0.24923177651806364,
+            0.2867637267055294,
+            1.1200224086566881,
+            1.0991484625403745,
+            1.0529808010883193,
+            1.0080378360780187,
+            0.9283228100733707,
+            0.007432806600741717,
+            0.5566532675893388,
+            1.0,
+            0.1644591032477088,
+            2.0739430845201205,
+            0.15005832579588554,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        },
+        "no_vantage_acquisition_gate_free": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.25956288975803193,
+            0.09138341769251644,
+            0.009976255517096856,
+            0.1706690418996861,
+            0.18626893364244665,
+            0.17728221506418032,
+            0.17305118627651822,
+            0.16402166692151698,
+            0.1399373210168823,
+            -0.03201315477255507,
+            0.06897290886197174,
+            0.0,
+            0.17235274793259894,
+            -0.11931980485297147,
+            -0.08001976251106058,
+            -0.005675530551474019,
+            0.005943089899819971,
+            0.07774643593701185,
+            -0.196606919674171,
+            0.12116871749718142,
+            -0.027400781411721475,
+            0.08925693077841108,
+            0.09035764463459368,
+            -0.1483110874328647,
+            0.06550595107300008,
+            -0.01309029571239395,
+            -0.10242836108612606,
+            0.15754419051354912,
+            0.08619486027776287,
+            0.09603023752366786,
+            -0.04187324919027587,
+            -0.1357408355779929,
+            0.05805736424426319,
+            -0.058084671356692374,
+            -0.05965016541064525,
+            0.15520351334870075,
+            -0.23062368413517936,
+            0.08823041043116275,
+            -0.01512091848011467
+          ],
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.85
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "full",
+          "folds": 5,
+          "intercept": 0.2923523602069334,
+          "l2": 0.1,
+          "mean": [
+            0.21190626385640796,
+            0.1341333319854537,
+            0.029675724545588058,
+            0.12523844012914992,
+            0.5853987068965517,
+            0.5237068965517241,
+            0.4474676724137931,
+            0.4019396551724138,
+            0.33405172413793105,
+            0.07566002155171901,
+            1.3507543103448276,
+            9.0,
+            0.10356800766283467,
+            3.894295858854537,
+            0.9053523699062523,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.4730603448275862,
+            "answered_accuracy": 0.8952164009111617,
+            "episodes": 3712,
+            "false_positive_rate": 0.005926724137931034,
+            "macro_f1": 0.5738679154635777,
+            "mean_geodesic_m": 2.883285777755724,
+            "mean_risk": 0.37438113060534195,
+            "predictions": {
+              "no": 1030,
+              "wait": 1956,
+              "yes": 726
+            }
+          },
+          "pair_gate_mode": "disabled",
+          "std": [
+            0.3506398131634344,
+            0.2951787698290371,
+            0.1474578124045171,
+            0.2333143403768194,
+            0.9166398488962665,
+            0.8902479605883603,
+            0.8464804473003721,
+            0.8114724992556335,
+            0.7496004435102905,
+            0.007052622158451373,
+            0.5564371265861818,
+            1.0,
+            0.14783105604235616,
+            1.9673327704849803,
+            0.14866191719541047,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        },
+        "no_vantage_acquisition_required": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.25956288975803193,
+            0.09138341769251644,
+            0.009976255517096856,
+            0.1706690418996861,
+            0.18626893364244665,
+            0.17728221506418032,
+            0.17305118627651822,
+            0.16402166692151698,
+            0.1399373210168823,
+            -0.03201315477255507,
+            0.06897290886197174,
+            0.0,
+            0.17235274793259894,
+            -0.11931980485297147,
+            -0.08001976251106058,
+            -0.005675530551474019,
+            0.005943089899819971,
+            0.07774643593701185,
+            -0.196606919674171,
+            0.12116871749718142,
+            -0.027400781411721475,
+            0.08925693077841108,
+            0.09035764463459368,
+            -0.1483110874328647,
+            0.06550595107300008,
+            -0.01309029571239395,
+            -0.10242836108612606,
+            0.15754419051354912,
+            0.08619486027776287,
+            0.09603023752366786,
+            -0.04187324919027587,
+            -0.1357408355779929,
+            0.05805736424426319,
+            -0.058084671356692374,
+            -0.05965016541064525,
+            0.15520351334870075,
+            -0.23062368413517936,
+            0.08823041043116275,
+            -0.01512091848011467
+          ],
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.9
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "full",
+          "folds": 5,
+          "intercept": 0.2923523602069334,
+          "l2": 0.1,
+          "mean": [
+            0.21190626385640796,
+            0.1341333319854537,
+            0.029675724545588058,
+            0.12523844012914992,
+            0.5853987068965517,
+            0.5237068965517241,
+            0.4474676724137931,
+            0.4019396551724138,
+            0.33405172413793105,
+            0.07566002155171901,
+            1.3507543103448276,
+            9.0,
+            0.10356800766283467,
+            3.894295858854537,
+            0.9053523699062523,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.4313038793103448,
+            "answered_accuracy": 0.8888194878201124,
+            "episodes": 3712,
+            "false_positive_rate": 0.0026939655172413795,
+            "macro_f1": 0.5301605208898164,
+            "mean_geodesic_m": 2.883285777755724,
+            "mean_risk": 0.3871774668122385,
+            "predictions": {
+              "no": 1030,
+              "wait": 2111,
+              "yes": 571
+            }
+          },
+          "pair_gate_mode": "required",
+          "std": [
+            0.3506398131634344,
+            0.2951787698290371,
+            0.1474578124045171,
+            0.2333143403768194,
+            0.9166398488962665,
+            0.8902479605883603,
+            0.8464804473003721,
+            0.8114724992556335,
+            0.7496004435102905,
+            0.007052622158451373,
+            0.5564371265861818,
+            1.0,
+            0.14783105604235616,
+            1.9673327704849803,
+            0.14866191719541047,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        },
+        "no_vantage_end_to_end_gate_free": {
+          "categories": [
+            "alarmclock",
+            "basketball",
+            "book",
+            "bottle",
+            "cellulartelephone",
+            "chair",
+            "countertop",
+            "creditcard",
+            "ladle",
+            "laptop",
+            "lettuce",
+            "papertowel",
+            "pillow",
+            "plate",
+            "refrigerator",
+            "saltshaker",
+            "shelf",
+            "sofa",
+            "spatula",
+            "tablelamp",
+            "television",
+            "tennisracket",
+            "toilettissue",
+            "tomato"
+          ],
+          "coefficients": [
+            0.7617679401784808,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.04453872687142495,
+            0.02781235646964884,
+            0.0,
+            0.0,
+            0.0,
+            -0.061135868671710406,
+            -0.013267027889820444,
+            -0.011482474282161332,
+            0.11709934517988563,
+            -0.21329540877435652,
+            0.10644410889052636,
+            0.02270057569622063,
+            0.1172456702959233,
+            0.06530487921995982,
+            -0.1741208020151696,
+            0.07741735007556304,
+            -0.03719369132938701,
+            -0.11182715920312908,
+            0.1728874462166006,
+            0.0855841492039317,
+            0.12010957972908891,
+            -0.0417758229076073,
+            -0.13159995047372397,
+            0.07036469160979411,
+            -0.08007984538258707,
+            -0.0655199266137904,
+            0.18549210863525964,
+            -0.2528394031735107,
+            0.06653544318022034,
+            -0.023198880906637426
+          ],
+          "decision": {
+            "no_probability": 0.3,
+            "pair_radius_m": 1.0,
+            "pair_support_threshold": 0.1,
+            "yes_probability": 0.7
+          },
+          "feature_names": [
+            "position_score_1",
+            "position_score_2",
+            "position_score_3",
+            "position_score_top3_mean",
+            "support_positions_ge_0.05",
+            "support_positions_ge_0.10",
+            "support_positions_ge_0.30",
+            "support_positions_ge_0.50",
+            "support_positions_ge_0.70",
+            "position_coverage",
+            "distinct_rooms",
+            "observations",
+            "grounded_fraction",
+            "minimum_grounded_pair_distance_clipped_5m",
+            "maximum_context_score",
+            "category=alarmclock",
+            "category=basketball",
+            "category=book",
+            "category=bottle",
+            "category=cellulartelephone",
+            "category=chair",
+            "category=countertop",
+            "category=creditcard",
+            "category=ladle",
+            "category=laptop",
+            "category=lettuce",
+            "category=papertowel",
+            "category=pillow",
+            "category=plate",
+            "category=refrigerator",
+            "category=saltshaker",
+            "category=shelf",
+            "category=sofa",
+            "category=spatula",
+            "category=tablelamp",
+            "category=television",
+            "category=tennisracket",
+            "category=toilettissue",
+            "category=tomato"
+          ],
+          "feature_profile": "no_vantage",
+          "folds": 5,
+          "intercept": 0.06260395230078729,
+          "l2": 0.1,
+          "mean": [
+            0.21190626385640796,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.07566002155171901,
+            1.3507543103448276,
+            9.0,
+            0.0,
+            0.0,
+            0.9053523699062523,
+            0.03879310344827586,
+            0.04310344827586207,
+            0.04741379310344827,
+            0.05172413793103448,
+            0.03771551724137931,
+            0.04741379310344827,
+            0.03556034482758621,
+            0.03987068965517242,
+            0.04418103448275862,
+            0.040948275862068964,
+            0.03879310344827586,
+            0.04956896551724138,
+            0.04418103448275862,
+            0.03017241379310345,
+            0.040948275862068964,
+            0.036637931034482756,
+            0.04418103448275862,
+            0.04418103448275862,
+            0.03556034482758621,
+            0.04525862068965517,
+            0.04310344827586207,
+            0.04310344827586207,
+            0.03771551724137931,
+            0.03987068965517242
+          ],
+          "oof_metrics": {
+            "answer_rate": 0.4156788793103448,
+            "answered_accuracy": 0.915100453661698,
+            "episodes": 3712,
+            "false_positive_rate": 0.010775862068965518,
+            "macro_f1": 0.5368948294479516,
+            "mean_geodesic_m": 2.883285777755724,
+            "mean_risk": 0.38178953577775576,
+            "predictions": {
+              "no": 745,
+              "wait": 2169,
+              "yes": 798
+            }
+          },
+          "pair_gate_mode": "disabled",
+          "std": [
+            0.3506398131634344,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.007052622158451373,
+            0.5564371265861818,
+            1.0,
+            1.0,
+            1.0,
+            0.14866191719541047,
+            0.19310152400519145,
+            0.2030899825756871,
+            0.2125222937176141,
+            0.22146952721836202,
+            0.190507367313172,
+            0.21252229371761394,
+            0.18519127059159704,
+            0.19565535454363506,
+            0.20549713057556268,
+            0.19817041798915064,
+            0.19310152400519076,
+            0.21705271980510632,
+            0.20549713057556376,
+            0.17106150718089372,
+            0.1981704179891515,
+            0.1878712139844689,
+            0.20549713057556376,
+            0.2054971305755614,
+            0.18519127059159735,
+            0.20787082032580845,
+            0.20308998257568567,
+            0.20308998257568667,
+            0.19050736731317122,
+            0.19565535454363348
+          ]
+        }
+      }
+    }
+  },
+  "draws": 10000,
+  "locked_test_accessed": false,
+  "schema": "safevantage_grouped_vantage_ablation_v0.1"
+}

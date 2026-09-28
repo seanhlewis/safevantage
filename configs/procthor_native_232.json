@@ -1,0 +1,22 @@
+{
+  "description": "Native ProcTHOR matched-policy comparison configuration",
+  "sensor": "controlled",
+  "splits": ["train", "test"],
+  "action_budgets": [8, 12],
+  "geodesic_budget_m": 20.0,
+  "common_decoder": true,
+  "fixed_horizon": true,
+  "methods": [
+    "coverage_gain",
+    "detector_confidence_gain",
+    "safevantage_active",
+    "safevantage_dc_full"
+  ],
+  "method_roles": {
+    "safevantage_dc_full": "revised SafeVantage policy",
+    "safevantage_active": "legacy SafeVantage reference",
+    "coverage_gain": "comparison policy",
+    "detector_confidence_gain": "comparison policy"
+  },
+  "input_data_included": false
+}

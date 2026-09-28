@@ -1,0 +1,92 @@
+{
+  "schema": "safevantage_selective_head_application_v0.4",
+  "model": "results/procthor/locked_baselines/selected_model_actions_8.json",
+  "model_sha256": "09101e4fbf273349f9cd5ae2d015037522edd8108e6379d2f7dbe0877cd4afff",
+  "source_rows_sha256": "75147a7dd7d96349556343521e1e01678030aa3df039e1e92e13dd5686af6bad",
+  "methods": {
+    "category_room_prior": {
+      "episodes": 7424,
+      "mean_risk": 0.39636960937937815,
+      "macro_f1": 0.4844988137197087,
+      "false_positive_rate": 0.0024245689655172415,
+      "answer_rate": 0.3771551724137931,
+      "answered_accuracy": 0.9017857142857143,
+      "mean_geodesic_m": 7.226290413860938,
+      "predictions": {
+        "yes": 903,
+        "no": 1897,
+        "wait": 4624
+      }
+    },
+    "coverage_gain": {
+      "episodes": 7424,
+      "mean_risk": 0.4217231474286266,
+      "macro_f1": 0.40591449569944194,
+      "false_positive_rate": 0.002963362068965517,
+      "answer_rate": 0.3046875,
+      "answered_accuracy": 0.8961096374889478,
+      "mean_geodesic_m": 6.313664670005955,
+      "predictions": {
+        "yes": 628,
+        "no": 1634,
+        "wait": 5162
+      }
+    },
+    "detector_confidence_gain": {
+      "episodes": 7424,
+      "mean_risk": 0.40700342888330465,
+      "macro_f1": 0.4459963452144705,
+      "false_positive_rate": 0.003232758620689655,
+      "answer_rate": 0.3325700431034483,
+      "answered_accuracy": 0.9060348319157554,
+      "mean_geodesic_m": 5.939312503994282,
+      "predictions": {
+        "yes": 847,
+        "no": 1622,
+        "wait": 4955
+      }
+    },
+    "nearest_frontier": {
+      "episodes": 7424,
+      "mean_risk": 0.3981279656500154,
+      "macro_f1": 0.49086068036819286,
+      "false_positive_rate": 0.0026939655172413795,
+      "answer_rate": 0.39439655172413796,
+      "answered_accuracy": 0.8886612021857924,
+      "mean_geodesic_m": 3.462017374153345,
+      "predictions": {
+        "yes": 893,
+        "no": 2035,
+        "wait": 4496
+      }
+    },
+    "random": {
+      "episodes": 7424,
+      "mean_risk": 0.42746140382774495,
+      "macro_f1": 0.4342264535043183,
+      "false_positive_rate": 0.0005387931034482759,
+      "answer_rate": 0.3503502155172414,
+      "answered_accuracy": 0.8819684736639753,
+      "mean_geodesic_m": 19.123580551882885,
+      "predictions": {
+        "yes": 583,
+        "no": 2018,
+        "wait": 4823
+      }
+    },
+    "safevantage_fixed_horizon": {
+      "episodes": 7424,
+      "mean_risk": 0.3872475912703867,
+      "macro_f1": 0.528882050776601,
+      "false_positive_rate": 0.003502155172413793,
+      "answer_rate": 0.42955280172413796,
+      "answered_accuracy": 0.8915020382565068,
+      "mean_geodesic_m": 3.559552477283307,
+      "predictions": {
+        "yes": 1107,
+        "no": 2082,
+        "wait": 4235
+      }
+    }
+  }
+}
